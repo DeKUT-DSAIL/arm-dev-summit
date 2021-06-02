@@ -12,4 +12,4 @@ In this section I will be taking you through the development steps of a device w
 ![Schematic diagram](/assets/img/schem2.jpg)
 I developed the device to help me in collecting water level data in a river channel. It utilizes the LoRaWAN network to send water level data collected by a micro-controller (from an ultrasonic sensor) to a network server (TTN-The Things Network). The data is then re-routed to a time-series data base (InfluxDB on GCP) for storage and easier access.
 
-
+### :three.one: Component list / Item list
