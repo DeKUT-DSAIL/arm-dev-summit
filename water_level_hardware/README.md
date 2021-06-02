@@ -9,26 +9,31 @@ Welcome to our IoT and machine learning session at the ARM DEV SUMMIT 2021. If y
 Over the next few hours, we will be diving into the Internet of Things and machine learning by building replicas of a device, which I developed to track and collect water level data in a river channel. Also, we will be analysing the data collected by the device deployed, using some machine learning tools and algorithms.
 ## :three: Hands-on :muscle: Let's build.
 In this section I will be taking you through the development steps of a device with the schematic diagram shown below.
-![Schematic diagram](/assets/img/multi3.PNG)
+![Schematic diagram](/assets/img/ard1.PNG)
 I developed the device to help me in collecting water level data in a river channel. It utilizes the LoRaWAN network to send water level data collected by a micro-controller (from an ultrasonic sensor) to a network server (TTN-The Things Network). The data is then re-routed to a time-series data base (InfluxDB on GCP) for storage and easier access.
 
 ### :arrow_down_small: Component list / Item list
 Listed below, are the components we will use to build the device fully.
-- [MTDOT-915-X1P-SMA-1](https://www.multitech.com/models/94557148LF) or [MTDOT-868-X1P-SMA-1](https://www.multitech.com/models/94557138LF) (The choice will depend on the area of residence)
-- LoRa Antenna 868Mhz RF SMA Female to be paired with [MTDOT-868-X1P-SMA-1](https://www.multitech.com/models/94557138LF)
-- LoRa Antenna 915Mhz RF SMA Female to be paired with [MTDOT-915-X1P-SMA-1](https://www.multitech.com/models/94557148LF)
-- MTMDK-ST-MDOT (to upload code to the Mdot)
-- Jumper cables/wires (5 (male to female),5 (female to female), 5 (male to male))
-- Breadboard kit
+- [Arduino Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (Main controller)
+- [RFM96W](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) Low Power Long Range Transceiver Module (868mHz - Europe & Africa) 
+- [RFM69HW 433Mhz](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) (Asia)
+- [RFM95W LoRa Wireless Module 915Mhz](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) (Asia & North America & south America)
+- Jumper cables/wires (10 (male to female),10 (female to female), 20 (male to male))
+- Two Breadboard kits
 - soldering iron and solder
 - HC-SRO4 ultrasonic sensor module
-- One 3.7V Lithium ion battery
-- [MT3608 Step-Up Adjustable DC-DC Switching Boost Converter](https://www.addicore.com/MT3608-Boost-Converter-p/ad300.htm)
-- 2.54mm male Header pins.(1 piece)
+- 2.54mm male Header pins.(2 piece)
+- 2.54mm female Header pins.(2 piece)
 - Access to power socket outlet 
 - Soldering station (optional)
 - Some Masking Tape 
-
+- 1KOhm resistor - 2
+- [TXS0108E Bi-directional Voltage Module](https://www.pixelelectric.com/sensors/biometric-rotation-current/current-voltage/txs0108e-bi-directional-voltage-module/)
+- [ESP8266 Adapter Plate](https://store.nerokas.co.ke/index.php?route=product/product&product_id=1971)
+- One millimeter thick copper conductor (wire)(diameter = 1mm) (to act as the antenna) - 40cm in length
+- One 3.7V Lithium ion battery
+- [MT3608 Step-Up Adjustable DC-DC Switching Boost Converter](https://www.addicore.com/MT3608-Boost-Converter-p/ad300.htm)
+### :arrow_down_small: Access to the LoRa Gateway
 
 
 
