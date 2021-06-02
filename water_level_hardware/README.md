@@ -4,7 +4,7 @@
 - How to collect data - using the device
 - Displaying a deployed version of the device in the field
 - Later (How to analyse the water level data collected) 
-## :two: Let us dive in :point_right: : Opening Remarks
+## :two: Let's dive in :point_right: : Opening Remarks
 Welcome to our IoT and machine learning session at the ARM DEV SUMMIT 2021. If you have any questions, please direct them to me. 
 Over the next few hours, we will be diving into the Internet of Things and machine learning by building replicas of a device, which I developed to track and collect water level data in a river channel. Also, we will be analysing the data collected by the device deployed, using some machine learning tools and algorithms.
 ## :three: Hands-on :muscle: Let's build.
