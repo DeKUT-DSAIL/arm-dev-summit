@@ -13,4 +13,22 @@ In this section I will be taking you through the development steps of a device w
 I developed the device to help me in collecting water level data in a river channel. It utilizes the LoRaWAN network to send water level data collected by a micro-controller (from an ultrasonic sensor) to a network server (TTN-The Things Network). The data is then re-routed to a time-series data base (InfluxDB on GCP) for storage and easier access.
 
 ### :arrow_down_small: Component list / Item list
+Listed below, are the components we will use to build the device fully.
+- [MTDOT-915-X1P-SMA-1](https://www.multitech.com/models/94557148LF) or [MTDOT-868-X1P-SMA-1](https://www.multitech.com/models/94557138LF) (The choice will depend on the area of residence)
+- LoRa Antenna 868Mhz RF SMA Female to be paired with [MTDOT-868-X1P-SMA-1](https://www.multitech.com/models/94557138LF)
+- LoRa Antenna 915Mhz RF SMA Female to be paired with [MTDOT-915-X1P-SMA-1](https://www.multitech.com/models/94557148LF)
+- MTMDK-ST-MDOT (to upload code to the Mdot)
+- Jumper cables/wires (5 (male to female),5 (female to female), 5 (male to male))
+- Breadboard kit
+- soldering iron and solder
+- HC-SRO4 ultrasonic sensor module
+- One 3.7V Lithium ion battery
+- [MT3608 Step-Up Adjustable DC-DC Switching Boost Converter](https://www.addicore.com/MT3608-Boost-Converter-p/ad300.htm)
+- 2.54mm male Header pins.(1 piece)
+- Access to power socket outlet 
+- Soldering station (optional)
+- Some Masking Tape 
+
+
+
 
