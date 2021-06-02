@@ -15,6 +15,7 @@ I developed the device to help me in collecting water level data in a river chan
 ### :arrow_down_small: Component list / Item list
 Listed below, are the components we will use to build the device fully.
 - [Arduino Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (Main controller)
+- [USB A Male to mini B Cable - Cable for Arduino Nano](https://www.electronicscomp.com/usb-a-male-to-mini-b-cable)
 - [RFM96W](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) Low Power Long Range Transceiver Module (868mHz - Europe & Africa) 
 - [RFM69HW 433Mhz](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) (Asia)
 - [RFM95W LoRa Wireless Module 915Mhz](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) (Asia & North America & south America)
@@ -34,6 +35,8 @@ Listed below, are the components we will use to build the device fully.
 - One 3.7V Lithium ion battery
 - [MT3608 Step-Up Adjustable DC-DC Switching Boost Converter](https://www.addicore.com/MT3608-Boost-Converter-p/ad300.htm)
 ### :arrow_down_small: Access to the LoRa Gateway
+:arrow_right: **If you have access gateway, we will follow the following development steps.** 
 
+ 
 
 
