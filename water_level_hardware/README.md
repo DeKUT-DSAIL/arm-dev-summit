@@ -36,8 +36,16 @@ Listed below, are the components we will use to build the device fully.
 - One millimeter thick copper conductor (wire)(diameter = 1mm) (to act as the antenna) - 40cm in length
 ### :arrow_down_small: Access to the LoRa Gateway
 :arrow_right: **If you have access gateway, we will follow the following development steps.** 
-- :hash: step one **preparation - soldering the lora transceiver on to the adapter** 
-This step facilitate connection to the Arduino Nano. The soldering should been done as shown below.
+- :hash: step one = **preparation - soldering the lora transceiver on to the adapter** 
+This step facilitates connection to the Arduino Nano. The soldering should been done as shown below.
+- :hash: step two = **Antenna development**
+To be able to connect to the LoraWAN network(if you have access) an antenna comes in handy. We will use a 1mm thick copper wire to create an antenna for the LoRA transceiver(RF95/RF96/RF69W). The wire specifics for each transceiver chip are as stated below.
+   - 173 mm for the 433mHz frequency plan (Asia)
+   - 86 mm for the 868mHz frequency plan (Europe and Africa)
+   - 82 mm for the 915mHz frequency plan (North America and Asia)
+   - :bulb: calculation base (C = λ (wavelength) * f (frequency)) but (c = 3*10^8 m/s) and f = 868mHz/915mHz/433mHz hence length :fast_forward: L = 0.25 * λ
+   
+
 
 
  
