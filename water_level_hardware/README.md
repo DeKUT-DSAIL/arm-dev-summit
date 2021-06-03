@@ -15,15 +15,17 @@ I developed the device to help me in collecting water level data in a river chan
 ### :arrow_down_small: Component list / Item list
 Listed below, are the components we will use to build the device fully.
 - [Arduino Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (Main controller)
+![Arduino](/assets/img/ard2.jpg)
 - [USB A Male to mini B Cable - Cable for Arduino Nano](https://www.electronicscomp.com/usb-a-male-to-mini-b-cable)
+![Arduino](/assets/img/ard3.jpg)
 - [RFM96W](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) Low Power Long Range Transceiver Module (868mHz - Europe & Africa) 
 - [RFM69HW 433Mhz](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) (Asia)
 - [RFM95W LoRa Wireless Module 915Mhz](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf) (Asia & North America & south America)
 - Jumper cables/wires (10 (male to female),10 (female to female), 20 (male to male))
-- Two Breadboard kits
+- 2 Solderless breadboard MB-102
 - soldering iron and solder
-- HC-SRO4 ultrasonic sensor module
-- 2.54mm male Header pins.(2 piece)
+- [HC-SRO4 ultrasonic sensor module](https://www.pixelelectric.com/products/sensors/distance-vision/ultrasonic-proximity-sensor/hc-sr04-ultrasonic-module/)
+- [2.54mm male Header pins.(2 piece)](https://www.pixelelectric.com/instruments-tools/wire-and-cables/header-pins/40pin-2-54mm-header-pin-male-straight/)
 - 2.54mm female Header pins.(2 piece)
 - Access to power socket outlet 
 - Soldering station (optional)
@@ -32,10 +34,11 @@ Listed below, are the components we will use to build the device fully.
 - [TXS0108E Bi-directional Voltage Module](https://www.pixelelectric.com/sensors/biometric-rotation-current/current-voltage/txs0108e-bi-directional-voltage-module/)
 - [ESP8266 Adapter Plate](https://store.nerokas.co.ke/index.php?route=product/product&product_id=1971)
 - One millimeter thick copper conductor (wire)(diameter = 1mm) (to act as the antenna) - 40cm in length
-- One 3.7V Lithium ion battery
-- [MT3608 Step-Up Adjustable DC-DC Switching Boost Converter](https://www.addicore.com/MT3608-Boost-Converter-p/ad300.htm)
 ### :arrow_down_small: Access to the LoRa Gateway
 :arrow_right: **If you have access gateway, we will follow the following development steps.** 
+- :hash: step one **preparation - soldering the lora transceiver on to the adapter** 
+This step facilitate connection to the Arduino Nano. The soldering should been done as shown below.
+
 
  
 
