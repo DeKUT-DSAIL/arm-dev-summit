@@ -55,16 +55,16 @@ The Logic level converter will help in preventing the Arduino Nano from frying t
 - :hash: step Five = **The Things Network (TTN) Registration**
 The things network is basically a network server where a user is able to view and re-route the data coming in from the nodes. If you don't have an account on The things Stack v3, below are a few steps on how to step a device on the server.\
 1. Log on to the [The things Stack V3 website](https://eu1.cloud.thethings.network/console/applications) (:link:) and create an account  (:abcd: The normal procedure)
-      ![Arduino](/assets/img/ttn1.PNG)
-      ![Arduino](/assets/img/ttn2.PNG)
+![Arduino](/assets/img/ttn1.PNG)
+![Arduino](/assets/img/ttn2.PNG)
 
 2. After loging in go to the **Console** and click on **Application** - The application page houses the end nodes (as we will see). If the you do not have an application, Create on by clicking on the **add application** key
-      ![Arduino](/assets/img/ttn3.PNG)
-      ![Arduino](/assets/img/ttn4.PNG)
+![Arduino](/assets/img/ttn3.PNG)
+![Arduino](/assets/img/ttn4.PNG)
 
 3. After creating an application, click into the application and create an ABP (Activation by Personalization) device.
-      ![Arduino](/assets/img/ttn5.PNG)
-      ![Arduino](/assets/img/ttn6.PNG)
+![Arduino](/assets/img/ttn5.PNG)
+![Arduino](/assets/img/ttn6.PNG)
 
 4. The frequency plan on the next image should depend on where you reside
 ![Arduino](/assets/img/ttn7.PNG)
