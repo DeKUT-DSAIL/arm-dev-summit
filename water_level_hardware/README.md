@@ -78,10 +78,8 @@ The things network is basically a network server where a user is able to view an
    - [arduino-lmic-master](https://github.com/matthijskooijman/arduino-lmic)
    - ArduinoJson, MCCI_Arduino_Development_Kit_ADK and Low-Power-master can be found listed, on the Arduino library manager and you can install them directly
 4. After sorting out the library and code issue, open up the code on the Arduino IDE and replace the network session keys, application session key and device address with what you have on the device detail section of the TTN.(SHOWN BELOW)
-
 [Arduino](/assets/img/ttn10.PNG)
 [Arduino](/assets/img/ttn11.PNG)
-
 5. The keys should be stretched out in MSB hexadecimal form.
 
       
