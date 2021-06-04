@@ -67,10 +67,7 @@ The things network is basically a network server where a user is able to view an
 ![Arduino](/assets/img/ttn6.PNG)
 
 4. The frequency plan on the next image should depend on where you reside
-![Arduino](/assets/img/ttn7.PNG)
-
-5. Continue.
-![Arduino](/assets/img/ttn8.PNG)
+![Arduino](/assets/img/ttn7.PNG)![Arduino](/assets/img/ttn8.PNG)
 ![Arduino](/assets/img/ttn9.PNG)
 ![Arduino](/assets/img/ttn10.PNG)
 
