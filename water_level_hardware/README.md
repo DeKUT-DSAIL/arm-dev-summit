@@ -84,6 +84,60 @@ The things network is basically a network server where a user is able to view an
 
 5. The keys should be stretched out in MSB hexadecimal form.
 
+- :hash: step Five = **Uploading the code and connecting the components on the breadboard**
+1. After changing the keys on your code, compile it and upload it to the Arduino Nano using the cable provided. 
+2. If the upload is a success, disconnect the Nano and connect all the components on the breadboard as shown below. 
+
+![Arduino](/assets/img/circuit.PNG)
+
+3. Once the connection is done, power the nano by connecting it to your computer.
+### :arrow_down_small: RESULTS:
+Once you power the device on you should start receiving sensor data on The Things stack after every 60 seconds as shown below.
+
+### :arrow_down_small: Incase you don't have a LoRa network connection:
+If do not have access to a LoRa network, you can just connect the ultrasonic sensor directly to the Arduino nano and upload the code below as a script.
+``` cpp
+// ---------------------------------------------------------------- //
+// Arduino Ultrasoninc Sensor HC-SR04
+// Re-writed by Arbi Abdul Jabbaar
+// Using Arduino IDE 1.8.7
+// Using HC-SR04 Module
+// Tested on 17 September 2019
+// ---------------------------------------------------------------- //
+
+#define echoPin 2 // attach pin D2 Arduino to pin Echo of HC-SR04
+#define trigPin 3 //attach pin D3 Arduino to pin Trig of HC-SR04
+
+// defines variables
+long duration; // variable for the duration of sound wave travel
+int distance; // variable for the distance measurement
+
+void setup() {
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
+  pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
+  Serial.begin(9600); // // Serial Communication is starting with 9600 of baudrate speed
+  Serial.println("Ultrasonic Sensor HC-SR04 Test"); // print some text in Serial Monitor
+  Serial.println("with Arduino UNO R3");
+}
+void loop() {
+  // Clears the trigPin condition
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigPin HIGH (ACTIVE) for 10 microseconds
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  // Reads the echoPin, returns the sound wave travel time in microseconds
+  duration = pulseIn(echoPin, HIGH);
+  // Calculating the distance
+  distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and back)
+  // Displays the distance on the Serial Monitor
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+}
+```
+The results are shown on the serial monitor in the Arduino IDE.
       
 
 
