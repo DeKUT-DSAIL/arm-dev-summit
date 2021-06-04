@@ -63,12 +63,14 @@ The things network is basically a network server where a user is able to view an
       3. After creating an application, click into the application and create an ABP (Activation by Personalization) device.
       ![Arduino](/assets/img/ttn5.PNG)
       ![Arduino](/assets/img/ttn6.PNG)
+      
       The frequency plan on the next image should depend on where you reside
-      ![Arduino](/assets/img/ttn7.PNG)
+      
+   ![Arduino](/assets/img/ttn7.PNG)
       Continue.
-      ![Arduino](/assets/img/ttn8.PNG)
-      ![Arduino](/assets/img/ttn9.PNG)
-      ![Arduino](/assets/img/ttn10.PNG)
+   ![Arduino](/assets/img/ttn8.PNG)
+   ![Arduino](/assets/img/ttn9.PNG)
+   ![Arduino](/assets/img/ttn10.PNG)
 
 
 
