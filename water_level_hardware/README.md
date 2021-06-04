@@ -54,23 +54,24 @@ The final step u should be as shown below.
 The Logic level converter will help in preventing the Arduino Nano from frying the Lora Tranceiver circuit. The Transceiver operates at a 3.3V logic level and the Arduino nano operates at a 5V logic level, hence seperation is needed. The logic level is bi-directional hence the conversion happens both ways. Before plugging the converter onto the breadboard, solder the 2.54 Male Header pins as shown below, to facilitate connection.
 - :hash: step Five = **The Things Network (TTN) Registration**
 The things network is basically a network server where a user is able to view and re-route the data coming in from the nodes. If you don't have an account on The things Stack v3, below are a few steps on how to step a device on the server.\
-      1.  Log on to the [The things Stack V3 website](https://eu1.cloud.thethings.network/console/applications) (:link:) and create an account  (:abcd: The normal procedure)
+1. Log on to the [The things Stack V3 website](https://eu1.cloud.thethings.network/console/applications) (:link:) and create an account  (:abcd: The normal procedure)
       ![Arduino](/assets/img/ttn1.PNG)
       ![Arduino](/assets/img/ttn2.PNG)
-      2. After loging in go to the **Console** and click on **Application** - The application page houses the end nodes (as we will see). If the you do not have an application, Create on by clicking on the **add application** key.
+
+2. After loging in go to the **Console** and click on **Application** - The application page houses the end nodes (as we will see). If the you do not have an application, Create on by clicking on the **add application** key
       ![Arduino](/assets/img/ttn3.PNG)
       ![Arduino](/assets/img/ttn4.PNG)
-      3. After creating an application, click into the application and create an ABP (Activation by Personalization) device.
+
+3. After creating an application, click into the application and create an ABP (Activation by Personalization) device.
       ![Arduino](/assets/img/ttn5.PNG)
       ![Arduino](/assets/img/ttn6.PNG)
-      
-      The frequency plan on the next image should depend on where you reside
-      
-   ![Arduino](/assets/img/ttn7.PNG)
-      Continue.
-   ![Arduino](/assets/img/ttn8.PNG)
-   ![Arduino](/assets/img/ttn9.PNG)
-   ![Arduino](/assets/img/ttn10.PNG)
+
+4. The frequency plan on the next image should depend on where you reside
+![Arduino](/assets/img/ttn7.PNG)
+5. Continue.
+![Arduino](/assets/img/ttn8.PNG)
+![Arduino](/assets/img/ttn9.PNG)
+![Arduino](/assets/img/ttn10.PNG)
 
 
 
