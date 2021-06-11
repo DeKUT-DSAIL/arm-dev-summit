@@ -38,6 +38,7 @@ Listed below, are the components we will use to build the device fully.
 :arrow_right: **### If you have access gateway, we will follow the following development steps.** 
 - :hash: step One = **preparation - soldering the lora transceiver on to the adapter** 
 This step facilitates connection to the Arduino Nano. Carefully solder the LoRa Transceiver on the [ESP8266 Adapter Plate](https://store.nerokas.co.ke/index.php?route=product/product&product_id=1971).The soldering should been done as shown below.
+![Arduino](/assets/img/ard6.jpg)
 - :hash: step Two = **Solder the Male Header pins**
 The header pins will enable us to create the breadboard connection we need. The setup should be as shown below.  
 - :hash: step Three = **Antenna development**
@@ -47,11 +48,13 @@ To be able to connect to the LoraWAN network(if you have access) an antenna come
    - 82 mm for the 915mHz frequency plan (North America and Asia)
    - :bulb: calculation base (C = λ (wavelength) * f (frequency)) but (c = 3*10^8 m/s) and f = 868mHz/915mHz/433mHz hence length :fast_forward: L = 0.25 * λ
 In the image below, is illustration of how the length of the antenna is realized.   
-![Arduino](/assets/img/ard4.jpg)
+![Arduino](/assets/img/ard7.jpg)
    - After evaluating the length of copper wire you will need, cut the piece using a side cutter or pliers, and then solder one end of the copper wire (antenna) on to the antenna pad of the LoRa transceiver(:red_circle: Care and attention is needed).
 The final step u should be as shown below.
+![Arduino](/assets/img/ard4.jpg)
 - :hash: step Four = **Logic level conveter preparation**
 The Logic level converter will help in preventing the Arduino Nano from frying the Lora Tranceiver circuit. The Transceiver operates at a 3.3V logic level and the Arduino nano operates at a 5V logic level, hence seperation is needed. The logic level is bi-directional hence the conversion happens both ways. Before plugging the converter onto the breadboard, solder the 2.54 Male Header pins as shown below, to facilitate connection.
+![Arduino](/assets/img/ard5.jpg)
 - :hash: step Five = **The Things Network (TTN) Registration**
 1. Click and follow the steps listed on [This link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/the%20things%20stack%20v3/README.md)
 - :hash: Step Six = **Arduino code and TTN link**
