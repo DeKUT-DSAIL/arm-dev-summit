@@ -53,7 +53,7 @@ The final step u should be as shown below.
 - :hash: step Four = **Logic level conveter preparation**
 The Logic level converter will help in preventing the Arduino Nano from frying the Lora Tranceiver circuit. The Transceiver operates at a 3.3V logic level and the Arduino nano operates at a 5V logic level, hence seperation is needed. The logic level is bi-directional hence the conversion happens both ways. Before plugging the converter onto the breadboard, solder the 2.54 Male Header pins as shown below, to facilitate connection.
 - :hash: step Five = **The Things Network (TTN) Registration**
-1. Click follow the steps listed on [This link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/the%20things%20stack%20v3/README.md)
+1. Click and follow the steps listed on [This link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/the%20things%20stack%20v3/README.md)
 - :hash: Step Six = **Arduino code and TTN link**
 1. To upload the Arduino code onto the arduino Nano, you need to download and install the Arduino offline IDE. [Link](https://www.arduino.cc/en/software)
 2. After installation download the code from this link :link:  :arrow_right: [Arduino code](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/water_level_hardware/dev-summit-arduino/dev-summit-arduino.ino)
