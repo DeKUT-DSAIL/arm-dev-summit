@@ -1,4 +1,20 @@
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn 
+seaborn
+plotly
+urllib3
+SoundFile
+sounddevice
+numba == 0.48
+librosa
+pycountry
+tqdm
+ipython
+jupyter
 requests
 notebook
-ipython
 pycountry
+tensorflow
