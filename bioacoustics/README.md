@@ -41,11 +41,11 @@ During this session, we will go through the steps of acquiring acoustic data of 
 ## Requirements
 <ol>
 <li>Environment setup</li>
-  <p align="center"> 
+  <p> 
   Figure 2: A flow diagram of how acoustic classification of bird species is acheived.
 </p>
 <li>Second item</li>
-  <p align="center"> 
+  <p> 
   Figure 2: A flow diagram of how acoustic classification of bird species is acheived.
 </p>
 <li>Third item</li>
