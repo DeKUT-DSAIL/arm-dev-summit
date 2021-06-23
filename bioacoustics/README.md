@@ -12,5 +12,7 @@ The idea behind automatic acoustic classification is that animals and especially
 
 ## How does it work?
 
-Different sounds sound differently to our ears due to the different frequency components contained in each sound. If we can extract the frequency components of a sound, we can be able to describe that sound and also differentiate it from another sound by comparing their frequency components. Sounds produced by birds of the same species will have frequency components that are similar but different from sounds from another species. We can visualize the frequency components of a sound using a spectrogram. A spectrogram is a plot of frequency against time. 
+Different sounds sound differently to our ears due to the different frequency components contained in each sound. If we can extract the frequency components of a sound, we can be able to describe that sound and also differentiate it from another sound by comparing their frequency components. Sounds produced by birds of the same species will have frequency components that are similar but different from sounds from another species. We can visualize the frequency components of a sound using a spectrogram. A spectrogram is a plot of frequency against time.
+
+![Grey-backed Camaroptera](/assets/img/grey-backed.png)
 
