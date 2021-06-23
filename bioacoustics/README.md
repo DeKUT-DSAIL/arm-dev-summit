@@ -40,14 +40,9 @@ During this session, we will go through the steps of acquiring acoustic data of 
 
 ## Requirements
 <ol>
-<li>Environment setup</li>
-  <p> 
-  Figure 2: A flow diagram of how acoustic classification of bird species is acheived.
+<li>Installing Python</li>
+ <p> 
+  For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows, go to the - [Python page ](https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe) (Main controller) :link: 
 </p>
-<li>Second item</li>
-  <p> 
-  Figure 2: A flow diagram of how acoustic classification of bird species is acheived.
-</p>
-<li>Third item</li>
-<li>Fourth item</li>
+
 </ol>
