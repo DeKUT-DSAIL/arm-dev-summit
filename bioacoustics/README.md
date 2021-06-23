@@ -30,8 +30,12 @@ Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Tur
   <img width="auto" height="300" src="/assets/img/dsp-ml.png"> 
 </p>
 
-<p align="center"> 
+<em align="center"> 
   Figure 2: A flow diagram of how acoustic classification of bird species is acheived.
-</p>
+</em>
 
+After training a model, we can then deploy it on an acoustic sensor (a Raspberry Pi based acoustic sensor will be used for our case) for automatic acoustic classification of birds in the ecosystems. 
 
+During this session, we will go through the steps of acquiring acoustic data of birds, preprocess the data, extract features from the data (compute spectrograms), train machine learning models using the spectrograms, test the models and then deploy the models on the Raspberry Pi.
+
+## Requirements
