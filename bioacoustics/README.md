@@ -24,5 +24,14 @@ Different sounds sound differently to our ears due to the different frequency co
   Figure 1: SpectrogramS of a Grey-backed Camaroptera (left) and Hartlaub's Turacos (right)
 </p>
 
-Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Turacos. 
+Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Turacos. By looking at the two spectrograms, we can see that the spectrum of the sounds from the two birds are different. We can then treat the spectrograms as images and feed them to a machine learning model for classification. Therefore, by computing spectrograms of different bird species' sounds we can train a machine learning model that will be used in acoustic classification of birds. 
+
+<p align="center">
+  <img width="460" height="300" src="/assets/img/dsp-ml.png"> 
+</p>
+
+<p align="center"> 
+  Figure 2: A flow diagram of how acoustic classification of bird species is acheived.
+</p>
+
 
