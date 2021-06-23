@@ -16,13 +16,13 @@ Different sounds sound differently to our ears due to the different frequency co
 
 <p align="center">
   <img width="460" height="300" src="/assets/img/grey-backed.png">
-  <img width="460" height="300" src="/assets/img/grey-backed.png">
+  <img width="460" height="300" src="/assets/img/hartlaub's-turacos-spectrogram.png">
   
 </p>
 
 <p align="center"> 
-  Figure 1: A spectrogram of a Grey-backed Camaroptera
+  Figure 1: SpectrogramS of a Grey-backed Camaroptera (left) and Hartlaub's Turacos (right)
 </p>
 
-Figure 1 above shows a spectrogram of a greybacked 
+Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Turacos. 
 
