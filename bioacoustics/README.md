@@ -18,3 +18,7 @@ Different sounds sound differently to our ears due to the different frequency co
   <img width="460" height="300" src="/assets/img/grey-backed.png">
 </p>
 
+<p class="font-italic text-center"> 
+  Figure 1: A specytrogram of a Grey-backed Camaroptera
+</p>
+
