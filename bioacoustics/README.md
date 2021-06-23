@@ -17,3 +17,7 @@ Different sounds sound differently to our ears due to the different frequency co
 
 <div style="text-align:center"><img src="/assets/img/grey-backed.png" /></div>
 
+<p align="center">
+  <img width="460" height="300" src="/assets/img/grey-backed.png">
+</p>
+
