@@ -1,6 +1,6 @@
 # Acoustic Classification of Bird Species
 
-Welcome to our session on Bioacoustics. During this session, we will be discussing on how we can classify birds from their vocalizations and set up hardware that we will use for this task. Let us dive into the task and feel free to direct any question at me.
+Welcome to our session on acoustic classification of bird species. During this session, we will be discussing on how we can classify birds from their vocalizations and set up hardware that we will use for this task. Let us dive into the task and feel free to direct any question at me.
 
 ## Why are we really doing this?
 
@@ -8,4 +8,9 @@ Automatic acoustic classification of bird species offers a tool to study our eco
 
 ## What is the idea?
 
-The idea behind automatic acoustic classification is that animals and especially birds produce characteristic calls/songs that are unique to their species. We can be able to tell different species of birds by just listening to the sound they produce. A lot of data is collected from deploying acoustic sensors in our ecosystems. Manual classification of this data may turn to be a difficult task. However, we can automate the process of acoustic classification of bird species using machine learning. Using digital signal processing (DSP) techniques, we can be able to analyze different sound recordings on digital computers and be able to tell the different sounds from different bird species. Of interest is the frequency component of the recordings.   
+The idea behind automatic acoustic classification is that animals and especially birds produce characteristic calls/songs that are unique to their species. We can be able to tell different species of birds by just listening to the sound they produce. A lot of data is collected from deploying acoustic sensors in our ecosystems. Manual classification of this data may turn to be a difficult task. However, we can automate the process of acoustic classification of bird species using machine learning. Using digital signal processing (DSP) techniques, we can be able to analyze different sound recordings on digital computers and be able to tell the different sounds from different bird species. Of interest is the frequency component of the recordings. By analyzing the spectrum of bird recordings, we can be able to tell different species of birds.
+
+## How does it work?
+
+Different sounds sound differently to our ears due to the different frequency components contained in each sound. If we can extract the frequency components of a sound, we can be able to describe that sound and also differentiate it from another sound by comparing their frequency components. Sounds produced by birds of the same species will have frequency components that are similar but different from sounds from another species. We can visualize the frequency components of a sound using a spectrogram. A spectrogram is a plot of frequency against time. 
+
