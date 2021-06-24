@@ -52,3 +52,13 @@ sudo apt install python3 python3-pip
 ```cpp
 sudo apt install python3 python3-pip
 ```
+
+<ol>
+<li>Installing Python</li>
+ <p> 
+For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows and Mac OS X, download the <a href="https://www.python.org/downloads/" target="_blank">Python installer here</a> and run it. For computers running on Linux distributions, run the following on terminal:  
+</p>
+```cpp
+sudo apt install python3 python3-pip
+```
+</ol>
