@@ -42,7 +42,9 @@ During this session, we will go through the steps of acquiring acoustic data of 
 <ol>
 <li>Installing Python</li>
  <p> 
-  For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows, download the <a href="https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe" target="_blank">Python installer here</a> and run it. 
+For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows and Mac OS X, download the <a href="https://www.python.org/downloads/" target="_blank">Python installer here</a> and run it. For computers running on Linux distributions, run the following on terminal:  
 </p>
-
+```cpp
+sudo apt install python3 python3-pip
+```
 </ol>
