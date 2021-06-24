@@ -39,26 +39,15 @@ After training a model, we can then deploy it on an acoustic sensor (a Raspberry
 During this session, we will go through the steps of acquiring acoustic data of birds, preprocess the data, extract features from the data (compute spectrograms), train machine learning models using the spectrograms, test the models and then deploy the models on the Raspberry Pi.
 
 ## Requirements
-<ol>
-<li>Installing Python</li>
- <p> 
+
+1. Installing Python
+
 For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows and Mac OS X, download the <a href="https://www.python.org/downloads/" target="_blank">Python installer here</a> and run it. For computers running on Linux distributions, run the following on terminal:  
-</p>
-```cpp
-sudo apt install python3 python3-pip
-```
-</ol>
 
 ```cpp
 sudo apt install python3 python3-pip
 ```
 
-<ol>
-<li>Installing Python</li>
- <p> 
-For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows and Mac OS X, download the <a href="https://www.python.org/downloads/" target="_blank">Python installer here</a> and run it. For computers running on Linux distributions, run the following on terminal:  
-</p>
-```cpp
-sudo apt install python3 python3-pip
-```
-</ol>
+2. Creating a Python environment
+
+Next, we need to create a Python environment and install the necessary libraries. 
