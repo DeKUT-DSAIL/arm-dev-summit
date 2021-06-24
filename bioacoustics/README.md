@@ -48,3 +48,7 @@ For this task, we will be using Python programming language so let's begin with 
 sudo apt install python3 python3-pip
 ```
 </ol>
+
+```cpp
+sudo apt install python3 python3-pip
+```
