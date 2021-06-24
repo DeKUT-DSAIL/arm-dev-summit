@@ -42,7 +42,7 @@ During this session, we will go through the steps of acquiring acoustic data of 
 
 1. Installing Python
 
-For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows and Mac OS X, download the <a href="https://www.python.org/downloads/" target="_blank">Python installer here</a> and run it. For computers running on Linux distributions, run the following on terminal:  
+For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows and Mac OS X, download the [Python installer here](https://www.python.org/downloads/) and run it. For computers running on Linux distributions, run the following on terminal:  
 
 ```cpp
 sudo apt install python3 python3-pip
@@ -50,4 +50,16 @@ sudo apt install python3 python3-pip
 
 2. Creating a Python environment
 
-Next, we need to create a Python environment and install the necessary libraries. 
+Next, we need to create a Python environment and install the necessary libraries. To create the environment and activate it, run the following lines one at a time on the command prompt for Windows and terminal for Linux and Mac OS X:
+
+```cpp
+// Windows
+python -m venv 'environment name'
+'environment name'/Scripts/activate
+
+// Linux and Mac OS X
+python -m venv 'environment name'
+source 'environment name'/bin/activate
+```
+
+After creating the environment, download the [requirements.txt here](https://raw.githubusercontent.com/DeKUT-DSAIL/arm-dev-summit/main/bioacoustics/requirements.txt?token=AQENBGXS3BGDCSGQIPAYWB3A3W65E). 
