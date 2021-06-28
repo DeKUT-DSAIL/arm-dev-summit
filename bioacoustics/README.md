@@ -75,11 +75,51 @@ source 'environment name'/bin/activate
 
 After creating the environment, download the [requirements.txt here](https://raw.githubusercontent.com/DeKUT-DSAIL/arm-dev-summit/main/bioacoustics/requirements.txt?token=AQENBGXS3BGDCSGQIPAYWB3A3W65E). To install the requirements, run the following line on the command prompt or the terminal:
 ```cpp
-// Windows
 pip install -r 'path to requirements.txt'
 ```
 #### Installing software on the Raspberry Pi
 We are going to install Raspberry Pi OS and the requirements for this task.
-1. Installing Raspbian OS
+1. Installing Raspberry Pi OS
+
 The Raspberry Pi needs an operating system for its operation. Download [Raspberry Pi Imager here](https://www.raspberrypi.org/software/), install it and follow the steps below to write the Raspberry Pi OS image on the SD Card.
 ##### Step 1
+Run the Raspberry Pi Imager and the following window should appear:
+[1 rapbian.png]
+##### Step 2.0
+Choose operating system and select the option highlated below:
+[2 raspbian_LI.jpg]
+##### Step 2.1
+Press CTRL + SHIFT + X for advanced options and check and fill in the spaces as follows
+[3 raspbian.png]
+##### Step 3
+Choose storage 
+[4 raspbian_LI.jpg]
+##### Step 4
+Write the image and verify the SD card by clicking yes.
+[5 raspbian.png]
+
+You should see the writing progress as shown below
+[6 raspbian.png]
+When the writing is completed, the following should appear:
+[7 raspbian.png]
+
+The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. To use the Raspberry Pi, you can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Plug the monitor and the Pi to power and switch on the monitor. From here you can access the Raspberry Pi's full desktop environment. If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will ssh to the headless Raspberry Pi. 
+#### SSHing into a headless Pi
+##### Step 1
+Connect your PC/Mac to the same Wi-Fi you entered SSID and password to the Pi during the image writing process. Alternatively, you can connect the Raspberry to your computer using an ethernet cable and then power the Raspberry Pi.
+
+##### Step 1
+After about a minute, open the command line on your computer and run the following line:
+```cpp
+ssh pi@raspberry.local
+```
+You should see the following on the terminal:
+
+
+2. Updating Raspberry Pi OS
+
+To update the Raspberry Pi, clone this repository into the Raspberry Pi by running the following line in the Raspberry Pi's command line:
+```cpp
+git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
+```
+
