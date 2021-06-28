@@ -90,7 +90,11 @@ Run the Raspberry Pi Imager and the following window should appear:
 
 ##### Step 2.0
 Choose operating system and select the option highlated below:
-[2 raspbian_LI.jpg]
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/2 raspbian_LI.jpg"> 
+</p>
+
 ##### Step 2.1
 Press CTRL + SHIFT + X for advanced options and check and fill in the spaces as follows
 [3 raspbian.png]
