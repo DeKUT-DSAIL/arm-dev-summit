@@ -84,7 +84,10 @@ We are going to install Raspberry Pi OS and the requirements for this task.
 The Raspberry Pi needs an operating system for its operation. Download [Raspberry Pi Imager here](https://www.raspberrypi.org/software/), install it and follow the steps below to write the Raspberry Pi OS image on the SD Card.
 ##### Step 1
 Run the Raspberry Pi Imager and the following window should appear:
-[1 rapbian.png]
+<p align="center">
+  <img width="auto" height="300" src="/assets/img/1 raspbian.png"> 
+</p>
+[]
 ##### Step 2.0
 Choose operating system and select the option highlated below:
 [2 raspbian_LI.jpg]
