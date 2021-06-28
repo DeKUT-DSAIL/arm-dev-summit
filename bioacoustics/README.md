@@ -97,18 +97,38 @@ Choose operating system and select the option highlated below:
 
 ##### Step 2.1
 Press CTRL + SHIFT + X for advanced options and check and fill in the spaces as follows
-[3 raspbian.png]
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/3 raspbian.PNG"> 
+</p>
+
+
+
 ##### Step 3
 Choose storage 
-[4 raspbian_LI.jpg]
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/4 raspbian_LI.jpg"> 
+</p>
+
 ##### Step 4
 Write the image and verify the SD card by clicking yes.
-[5 raspbian.png]
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/5 raspbian.PNG"> 
+</p>
 
 You should see the writing progress as shown below
-[6 raspbian.png]
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/6 raspbian.PNG"> 
+</p>
+
 When the writing is completed, the following should appear:
-[7 raspbian.png]
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/7 raspbian.PNG"> 
+</p>
 
 The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. To use the Raspberry Pi, you can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Plug the monitor and the Pi to power and switch on the monitor. From here you can access the Raspberry Pi's full desktop environment. If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will ssh to the headless Raspberry Pi. 
 #### SSHing into a headless Pi
