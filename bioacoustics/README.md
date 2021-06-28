@@ -85,7 +85,7 @@ The Raspberry Pi needs an operating system for its operation. Download [Raspberr
 ##### Step 1
 Run the Raspberry Pi Imager and the following window should appear:
 <p align="center">
-  <img width="auto" height="300" src="/assets/img/1 raspbian.png"> 
+  <img width="auto" height="auto" src="/assets/img/1 raspbian.png"> 
 </p>
 []
 ##### Step 2.0
