@@ -40,9 +40,20 @@ During this session, we will go through the steps of acquiring acoustic data of 
 
 ## Requirements
 
+### Hardware
+1. PC and access to the internet
+2. Raspberry Pi 3/4 and its power supply
+3. 8GB+ SD card
+4. USB microphone
+5. Mouse, keyboard, monitor and a HDMI cable (optinal)
+
+### Software
+
+#### Installing software on PC
+
 1. Installing Python
 
-For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. For computers running on windows and Mac OS X, download the [Python installer here](https://www.python.org/downloads/) and run it. For computers running on Linux distributions, run the following on terminal:  
+For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. Before installing Python on Windows, go to the[Microsoft Visual C++ downloads](https://www.python.org/downloads/), scroll down the page to the Visual Studio 2015, 2017 and 2019 section and download and install the Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019 for your platform. For computers running on windows and Mac OS X, download the [Python installer here](https://www.python.org/downloads/) and run it. For computers running on Linux distributions, run the following on terminal:  
 
 ```cpp
 sudo apt install python3 python3-pip
@@ -62,4 +73,13 @@ python -m venv 'environment name'
 source 'environment name'/bin/activate
 ```
 
-After creating the environment, download the [requirements.txt here](https://raw.githubusercontent.com/DeKUT-DSAIL/arm-dev-summit/main/bioacoustics/requirements.txt?token=AQENBGXS3BGDCSGQIPAYWB3A3W65E). 
+After creating the environment, download the [requirements.txt here](https://raw.githubusercontent.com/DeKUT-DSAIL/arm-dev-summit/main/bioacoustics/requirements.txt?token=AQENBGXS3BGDCSGQIPAYWB3A3W65E). To install the requirements, run the following line on the command prompt or the terminal:
+```cpp
+// Windows
+pip install -r 'path to requirements.txt'
+```
+#### Installing software on the Raspberry Pi
+We are going to install Raspberry Pi OS and the requirements for this task.
+1. Installing Raspbian OS
+The Raspberry Pi needs an operating system for its operation. Download [Raspberry Pi Imager here](https://www.raspberrypi.org/software/), install it and follow the steps below to write the Raspberry Pi OS image on the SD Card.
+##### Step 1
