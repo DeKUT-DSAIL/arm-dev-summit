@@ -190,10 +190,26 @@ You should now be able to access the whole desktop environment as shown below:
 </p>
 
 
-2. Updating Raspberry Pi OS
+2. Updating Raspberry Pi OS and creating environment
 
 To update the Raspberry Pi, clone this repository into the Raspberry Pi by running the following line in the Raspberry Pi's command line:
 ```cpp
 git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
 ```
+Open the File Manager of the Raspberry Pi by clicking on the icon to the right of the Web Browser icon. Open the arm-dev-summit folder and then the bioacoustics subfolder. Copy the `raspi-update-bash` and `env-setup-bash` files and paste them in the `/home/pi` directory. Open the terminal and run the following lines one at a time:
 
+```cpp
+chmod +x raspi-update-bash
+chmod +x env-setup-bash
+```
+Next, run the following line to update the Raspberry Pi OS and enter yes when prompted:
+
+```cpp
+./raspi-update-bash
+```
+After updating is done the Raspberry Pi will reboot. After the Pi has rebooted, open the terminal and run the following line and enter yes whenever prompted:
+
+```cpp
+./env-setup-bash
+```
+Now the Raspberry Pi is ready for use in this task.
