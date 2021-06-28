@@ -142,6 +142,10 @@ ssh pi@raspberry.local
 ```
 You should see the following on the terminal:
 
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/1 headless-ssh.PNG"> 
+</p>
+
 
 2. Updating Raspberry Pi OS
 
