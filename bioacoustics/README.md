@@ -87,7 +87,7 @@ Run the Raspberry Pi Imager and the following window should appear:
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/1 raspbian.png"> 
 </p>
-[]
+
 ##### Step 2.0
 Choose operating system and select the option highlated below:
 [2 raspbian_LI.jpg]
