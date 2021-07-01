@@ -48,7 +48,11 @@ After training a model, we can then deploy it on an acoustic sensor (a Raspberry
 During this session, we will go through the steps of acquiring acoustic data of birds, preprocess the data, extract features from the data (compute spectrograms), train machine learning models using the spectrograms, test the models and then deploy the models on the Raspberry Pi.
 
 </details>
+
 ## Requirements
+
+<details>
+  <summary>Click to expand!</summary>
 
 ### Hardware
 1. PC and access to the internet
@@ -223,3 +227,5 @@ After updating is done the Raspberry Pi will reboot. After the Pi has rebooted, 
 ./env-setup-bash
 ```
 Now the Raspberry Pi is ready for use in this task.
+
+</details>
