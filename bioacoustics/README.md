@@ -3,8 +3,10 @@
 Welcome to our session on acoustic classification of bird species. During this session, we will be discussing on how we can classify birds from their vocalizations and set up hardware that we will use for this task. Let us dive into the task and feel free to direct any question at me.
 
 ## Why are we really doing this?
-
-Automatic acoustic classification of bird species offers a tool to study our ecosystems for biodiversity conservation. it will help in continous and remote monitoring of our ecosystems. It can also be interesting for bird watchers and ornithologists. 
+<details>
+  <summary>Click to expand!</summary>
+Automatic acoustic classification of bird species offers a tool to study our ecosystems for biodiversity conservation. it will help in continous and remote monitoring of our ecosystems. It can also be interesting for bird watchers and ornithologists.
+</details>
 
 ## What is the idea?
 
