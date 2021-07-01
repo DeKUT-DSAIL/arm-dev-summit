@@ -16,6 +16,7 @@ Automatic acoustic classification of bird species offers a tool to study our eco
 The idea behind automatic acoustic classification is that animals and especially birds produce characteristic calls/songs that are unique to their species. We can be able to tell different species of birds by just listening to the sound they produce. A lot of data is collected from deploying acoustic sensors in our ecosystems. Manual classification of this data may turn to be a difficult task. However, we can automate the process of acoustic classification of bird species using machine learning. Using digital signal processing (DSP) techniques, we can be able to analyze different sound recordings on digital computers and be able to tell the different sounds from different bird species. Of interest is the frequency component of the recordings. By analyzing the spectrum of bird recordings, we can be able to tell different species of birds.
 
 </details>
+
 ## How does it work?
 
 <details>
