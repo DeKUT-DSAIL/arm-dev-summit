@@ -49,10 +49,12 @@ During this session, we will go through the steps of acquiring acoustic data of 
 
 ## Requirements
 
+
+### Hardware
+
 <details>
   <summary>Click to expand!</summary>
 
-### Hardware
 1. PC and access to the internet
 2. Raspberry Pi 3/4 and its power supply
 3. 8GB+ SD card
@@ -63,10 +65,12 @@ During this session, we will go through the steps of acquiring acoustic data of 
 
 ### Software
 
+#### Installing software on PC
+
 <details>
   <summary>Click to expand!</summary>
 
-#### Installing software on PC
+
 
 1. Installing Python
 
@@ -97,10 +101,12 @@ pip install -r 'path to requirements.txt'
   
 </details>
 
+#### Installing software on the Raspberry Pi
+
 <details>
   <summary>Click to expand!</summary>
 
-#### Installing software on the Raspberry Pi
+
 We are going to install Raspberry Pi OS and the requirements for this task.
 1. Installing Raspberry Pi OS
 
