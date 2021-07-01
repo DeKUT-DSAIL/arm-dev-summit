@@ -10,10 +10,16 @@ Automatic acoustic classification of bird species offers a tool to study our eco
 
 ## What is the idea?
 
+<details>
+  <summary>Click to expand!</summary>
+
 The idea behind automatic acoustic classification is that animals and especially birds produce characteristic calls/songs that are unique to their species. We can be able to tell different species of birds by just listening to the sound they produce. A lot of data is collected from deploying acoustic sensors in our ecosystems. Manual classification of this data may turn to be a difficult task. However, we can automate the process of acoustic classification of bird species using machine learning. Using digital signal processing (DSP) techniques, we can be able to analyze different sound recordings on digital computers and be able to tell the different sounds from different bird species. Of interest is the frequency component of the recordings. By analyzing the spectrum of bird recordings, we can be able to tell different species of birds.
 
+</details>
 ## How does it work?
 
+<details>
+  <summary>Click to expand!</summary>
 Different sounds sound differently to our ears due to the different frequency components contained in each sound. If we can extract the frequency components of a sound, we can be able to describe that sound and also differentiate it from another sound by comparing their frequency components. Sounds produced by birds of the same species will have frequency components that are similar but different from sounds from another species. We can visualize the frequency components of a sound using a spectrogram. A spectrogram is a plot of frequency against time.
 
 <p align="center">
@@ -40,6 +46,7 @@ After training a model, we can then deploy it on an acoustic sensor (a Raspberry
 
 During this session, we will go through the steps of acquiring acoustic data of birds, preprocess the data, extract features from the data (compute spectrograms), train machine learning models using the spectrograms, test the models and then deploy the models on the Raspberry Pi.
 
+</details>
 ## Requirements
 
 ### Hardware
