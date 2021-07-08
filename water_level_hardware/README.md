@@ -48,10 +48,10 @@ To be able to connect to the LoraWAN network(if you have access) an antenna come
    - 82 mm for the 915mHz frequency plan (North America and Asia)
    - :bulb: calculation base (C = λ (wavelength) * f (frequency)) but (c = 3*10^8 m/s) and f = 868mHz/915mHz/433mHz hence length :fast_forward: L = 0.25 * λ
 In the image below, is illustration of how the length of the antenna is realized.   
-![Arduino](/assets/img/ard7.jpg)
-   - After evaluating the length of copper wire you will need, cut the piece using a side cutter or pliers, and then solder one end of the copper wire (antenna) on to the antenna pad of the LoRa transceiver(:red_circle: Care and attention is needed).
-The final step u should be as shown below.
 ![Arduino](/assets/img/ard4.jpg)
+   - After evaluating the length of copper wire you will need, cut the piece using a side cutter or pliers, and then solder one end of the copper wire (antenna) on to the antenna pad of the LoRa transceiver(:red_circle: Care and attention is needed).
+The final step should be as shown below.
+![Arduino](/assets/img/ard7.jpg)
 - :hash: step Four = **Logic level conveter preparation**
 The Logic level converter will help in preventing the Arduino Nano from frying the Lora Tranceiver circuit. The Transceiver operates at a 3.3V logic level and the Arduino nano operates at a 5V logic level, hence seperation is needed. The logic level is bi-directional hence the conversion happens both ways. Before plugging the converter onto the breadboard, solder the 2.54 Male Header pins as shown below, to facilitate connection.
 ![Arduino](/assets/img/ard5.jpg)
