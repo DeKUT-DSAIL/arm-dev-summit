@@ -18,9 +18,11 @@ The things network is basically a network server where a user is able to view an
 ![Arduino](/assets/img/ttn9.PNG)
 ![Arduino](/assets/img/ttn10.PNG)
 
+5. On the payload formatters view set the payload formatter to Cayenne LLP 
+
 - :hash: Step Two  = **Arduino code and TTN link**
 1. To upload the Arduino code onto the arduino Nano, you need to download and install the Arduino offline IDE. [Link](https://www.arduino.cc/en/software)
-2. After installation download the code from this link :link:  :arrow_right: [Arduino code](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/water_level_hardware dev-summit-arduino/dev-summit-arduino.ino)
+2. After installation download the code from this link :link:  :arrow_right: [Arduino code](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/water_level_hardwaredev-summit-arduino/dev-summit-arduino.ino)
 3. Also download the following libraries using the links provided and install them using the arduino zip libraries installer.
    - [arduino-lmic-master](https://github.com/matthijskooijman/arduino-lmic)
    - ArduinoJson, MCCI_Arduino_Development_Kit_ADK and Low-Power-master can be found listed, on the Arduino library manager and you can install them directly
