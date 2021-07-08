@@ -75,7 +75,7 @@ The Logic level converter will help in preventing the Arduino Nano from frying t
 2. If the upload is a success, disconnect the Nano and connect all the components on the breadboard as shown below. 
 
 ![Arduino](/assets/img/circuit.PNG)
-![Arduino](/assets/img/result1.PNG)
+![Arduino](/assets/img/result5.PNG)
 
 3. Once the connection is done, power the nano by connecting it to your computer.
 ### :arrow_down_small: RESULTS:
