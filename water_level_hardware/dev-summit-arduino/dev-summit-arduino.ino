@@ -46,18 +46,18 @@ CayenneLPP lpp(51);
 // This is the default Semtech key, which is used by the prototype TTN
 // network initially.
 // !!!!!!!!!!!!!!!!!!!!!!!!! change next line:    
-static const PROGMEM u1_t NWKSKEY[16] ={ 0x72, 0x14, 0xC1, 0xF9, 0xB3, 0x50, 0xB3, 0x31, 0x0A, 0xF9, 0x56, 0x7D, 0x95, 0x53, 0x96, 0xC5 };
+static const PROGMEM u1_t NWKSKEY[16] ={ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 
 // LoRaWAN AppSKey, application session key (msb)
 // This is the default Semtech key, which is used by the prototype TTN
 // network initially.
 // !!!!!!!!!!!!!!!!!!!!!!!!! change next line: 
-static const u1_t PROGMEM APPSKEY[16] ={ 0x23, 0xBF, 0xBC, 0x04, 0x67, 0x70, 0x61, 0xFA, 0x08, 0xC7, 0x7E, 0xA0, 0xBB, 0x91, 0x02, 0xBA };
+static const u1_t PROGMEM APPSKEY[16] ={ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 
 // LoRaWAN end-device address (DevAddr)
 // See http://thethingsnetwork.org/wiki/AddressSpace
 // !!!!!!!!!!!!!!!!!!!!!!!!! change next line:  
-static const u4_t DEVADDR = 0x260B5FA7 ; // <-- Change this address for every node!
+static const u4_t DEVADDR = 0x12345678 ; // <-- Change this address for every node!
 
 // These callbacks are only used in over-the-air activation, so they are
 // left empty here (we cannot leave them out completely unless

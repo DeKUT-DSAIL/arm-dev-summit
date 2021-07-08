@@ -75,10 +75,14 @@ The Logic level converter will help in preventing the Arduino Nano from frying t
 2. If the upload is a success, disconnect the Nano and connect all the components on the breadboard as shown below. 
 
 ![Arduino](/assets/img/circuit.PNG)
+![Arduino](/assets/img/result1.PNG)
 
 3. Once the connection is done, power the nano by connecting it to your computer.
 ### :arrow_down_small: RESULTS:
 Once you power the device on you should start receiving sensor data on The Things stack after every 60 seconds as shown below.
+
+![Arduino](/assets/img/result2.jpg)
+![Arduino](/assets/img/results3.jpg)
 
 ### :arrow_down_small: Incase you don't have a LoRa network connection:
 If do not have access to a LoRa network, you can just connect the ultrasonic sensor directly to the Arduino nano and upload the code below as a script.
