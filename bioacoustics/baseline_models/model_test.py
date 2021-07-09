@@ -1,5 +1,5 @@
-import pickle
 import os
+import pickle
 import librosa
 import argparse
 import numpy as np
@@ -7,7 +7,8 @@ import configparser
 import pandas as pd
 from queue import Queue
 import sounddevice as sd
-import features_extraction as fe
+import features_generation as fg
+import preprocessing_functions as pf
 
 
 parser = argparse.ArgumentParser(description='Test trained models')
@@ -132,18 +133,19 @@ def main():
     if args.input == 'file':
         try:
             audio,_ = librosa.load(args.test_file_path, sr=sampling_rate)
-            features = fe.features_extraction(audio,
-                                    nfft,
-                                    hop_len,
-                                    args.noise_dir,
-                                    sampling_rate,
-                                    duration,
-                                    win_len,
-                                    hop_len,
-                                    num_mels,
-                                    num_frame)
+            feature = fg.features_extraction(audio,
+                                         nfft,
+                                         hop_len,
+                                         args.noise_dir,
+                                         sampling_rate,
+                                         duration,
+                                         win_length,
+                                         hop_length,
+                                         num_mels)
+            X = pf.all_summary_features(feature, num_frame)
+            
             print('predicting')
-            predicted = clf.predict(features)
+            predicted = clf.predict(X)
             print(predicted)
         except Exception as e:
             print(e)
@@ -165,22 +167,21 @@ def main():
                             my_block = q.get()
                             my_block = my_block.flatten()
                             audio = np.concatenate((audio, my_block))
-                        print(audio.shape)
                         
-                        features = fe.features_extraction(audio,
-                                                          nfft,
-                                                          hop_len,
-                                                          args.noise_dir,
-                                                          sampling_rate,
-                                                          duration,
-                                                          win_len,
-                                                          hop_len,
-                                                          num_mels,
-                                                          num_frame)
-                        
-                        print('predicting')
-                        predicted = clf.predict(features)
-                        print('predicted is: ', predicted)
+                        feature = fg.features_extraction(audio,
+                                                     nfft,
+                                                     hop_len,
+                                                     args.noise_dir,
+                                                     sampling_rate,
+                                                     duration,
+                                                     win_len,
+                                                     hop_len,
+                                                     num_mels)
+                        X = pf.all_summary_features(feature, num_frame)
+                        if X.size:
+                            print('predicting')
+                            predicted = clf.predict(X)
+                            print('predicted is: ', predicted)
                     
         except Exception as e:
             print(e)
