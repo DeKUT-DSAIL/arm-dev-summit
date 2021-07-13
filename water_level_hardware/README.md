@@ -129,6 +129,38 @@ void loop() {
 ```
 The results are shown on the serial monitor in the Arduino IDE.
       
+## :four:(Let's Deploy) Turning the developed system into a depolyment ready.:construction:
+
+The image below shows the system developed ready for deployment over a river channel.
+
+![Arduino](/assets/img/dev1.PNG)
+
+### :arrow_down_small: Component list / Item list
+
+- Copper clad board 
+- etching equipment (PCB Etchant (Cupric Chloride Salt) or Aluminium (III) Chloride salt)
+- A litre of distilled water to dissolve the salt
+- The components used on the breadboard.
+- A lithium ion battery (4200mAh or 6600mAH)
+- MT3608 Step-Up Adjustable DC-DC Switching Boost Converter (to power the 5V arduino nano)
+- Soldering iron and some solder
+- Header Pin Male Straight - 2.0mm Pitch (1 piece)
+- Header Pin Male Straight - 2.54mm Pitch (2 piece)
+- LoRa antenna (868mHZ or 915mHZ)
+- Edge Launch SMA Female or male connector (depends on your antenna configuration)
+- 100v diode
+- JST Connector 2Pin Plug (Male+Female) (to facilitate battery connection)
+- Jumper cable (single core) (1 metre)
+
+### :arrow_down_small: The deployment
+The image below shows the deployed at a suitable location.
+
+![Arduino](/assets/img/dev2.jpg)
+![Arduino](/assets/img/dev3.jpg)
+![Arduino](/assets/img/dev1.PNG)
+
+
+    
 
 
 
