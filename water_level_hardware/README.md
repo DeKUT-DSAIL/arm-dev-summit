@@ -160,9 +160,7 @@ The image below shows the deployed at a suitable location.
 
 ## :four: Data collection :link:[DASH APP](https://water-monitoring-258811.wl.r.appspot.com)
 
-<p align="center">
-  <img src="/assets/img/dev4.PNG"/>
-</p>
+![Arduino](/assets/img/dev4.PNG)
 
     
 
