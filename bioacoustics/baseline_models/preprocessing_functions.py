@@ -2,6 +2,10 @@
 import numpy as np
 
 
+fmean = np.load('fmean.npy')
+fstd = np.load('fstd.npy')
+
+
 def compute_feature_mean_std(feature):
     """Compute the mean and standard deviation of all the feature
     Args:
@@ -19,7 +23,7 @@ def compute_feature_mean_std(feature):
 
 def all_summary_features(feature, num_frame): 
     
-    fmean, fstd = compute_feature_mean_std(feature)
+#     fmean, fstd = compute_feature_mean_std(feature)
 
     feature = np.log(feature + 1e-8)
 
@@ -31,7 +35,7 @@ def all_summary_features(feature, num_frame):
     if feature.shape[1] > 2 * num_frame + 1:
 
         for indx in range(num_frame, feature.shape[1] - num_frame - 1, num_frame):
-
+            
             current_feature = feature[:, indx - num_frame: indx + num_frame + 1]
 
 

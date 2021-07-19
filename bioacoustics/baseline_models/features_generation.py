@@ -56,11 +56,11 @@ def features_extraction(audio,
         melspectrogram_dir: directory to save spectrograms
     """
       
-    signal, _ = an.get_audio_noise(audio, nfft, hop_len)
+#     signal, _ = an.get_audio_noise(audio, nfft, hop_len)
 
-    signal = pad_audio(signal, duration, sampling_rate, noise_dir)
+#     signal = pad_audio(signal, duration, sampling_rate, noise_dir)
 
-    feature = librosa.feature.melspectrogram(signal,
+    feature = librosa.feature.melspectrogram(audio,
                                                     sr=sampling_rate,
                                                     n_fft=nfft,
                                                     hop_length=hop_length,

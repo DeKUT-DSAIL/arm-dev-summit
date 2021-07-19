@@ -70,6 +70,8 @@ df_annotation = pd.read_csv(args.annotation_csv_path)
 species = list(set(df_annotation['label']))
 species.sort()
 
+
+
 def audio_callback(indata, frames, time, status):
     if status:
         print(status)
@@ -178,10 +180,12 @@ def main():
                                                      hop_len,
                                                      num_mels)
                         X = pf.all_summary_features(feature, num_frame)
+                        print(X.shape)
                         if X.size:
                             print('predicting')
                             predicted = clf.predict(X)
-                            print('predicted is: ', predicted)
+                            predicted_species = [species[int(i)] for i in predicted]
+                            print('predicted is: ', predicted_species)
                     
         except Exception as e:
             print(e)
