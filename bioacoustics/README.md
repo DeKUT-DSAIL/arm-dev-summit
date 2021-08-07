@@ -159,7 +159,7 @@ When the writing is completed, the following should appear:
 </p>
 
 The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. To use the Raspberry Pi, you can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Plug the monitor and the Pi to power and switch on the monitor. From here you can access the Raspberry Pi's full desktop environment. If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will ssh to the headless Raspberry Pi. 
-#### [SSHing into a headless Pi](DeKUT-DSAIL/arm-dev-summit/bioacoustics/README)
+#### [SSHing into a headless Pi]()
 ##### Step 1
 Connect your PC/Mac to the same Wi-Fi you entered SSID and password to the Pi during the image writing process. Alternatively, you can connect the Raspberry to your computer using an ethernet cable and then power the Raspberry Pi.
 
