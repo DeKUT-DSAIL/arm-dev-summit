@@ -1,11 +1,4 @@
 # SSHing into a headless
-
-<details>
-  <summary>Click to expand!</summary>
-  
-
- 
-
   
 ##### Step 1
 Connect your PC/Mac to the same Wi-Fi you entered SSID and password to the Pi during the image writing process. Alternatively, you can connect the Raspberry to your computer using an ethernet cable and then power the Raspberry Pi.
@@ -89,4 +82,3 @@ After updating is done the Raspberry Pi will reboot. After the Pi has rebooted, 
 ```
 Now the Raspberry Pi is ready for use in this task.
 
-</details>
