@@ -20,8 +20,18 @@ Type 'yes' and hit enter and then enter the password you set during image writin
   <img width="auto" height="auto" src="/assets/img/3 headless-ssh.PNG"> 
 </p>
 
-##### Step 3
-Run the following line on the terminal:
+You have now successfully SSHed into the Raspberry Pi.
+
+# Using VNC viewer
+
+To get the full desktop environment, we will use need to download and install [VNC viewer](https://www.realvnc.com/en/connect/download/viewer/).
+
+<details>
+  <summary>Click to expand!</summary>
+ 
+
+## Step 1
+On the terminal we SHHed into the Pi run the following command:
 
 ```cpp
 sudo raspi-config
@@ -34,13 +44,13 @@ and you should get the following:
 
 Scroll down to Interface Options using up-down buttons and hit enter. The select P3 VNC and enable it. Exit by selecting Finish using the 'sides' arrow keys and hit enter.
 
-##### Step 3
+## Step 2
 Run the following on the command line to obtain the IP address of the Pi.
 
 ```cpp
 hostname -I
 ```
-To get the full desktop environment, we will use need to download and install [VNC viewer](https://www.realvnc.com/en/connect/download/viewer/). On installing VNC viewer, open it and enter the IP address of the Pi as shown below and hit enter:
+Open VNC viewer and enter the IP address of the Pi as shown below and hit enter:
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/9 headless-ssh.PNG"> 
 </p>
@@ -57,10 +67,11 @@ You should now be able to access the whole desktop environment as shown below:
   <img width="auto" height="auto" src="/assets/img/12 headless-ssh.PNG"> 
 </p>
 
+ </details>
 
 2. Updating Raspberry Pi OS and creating environment
 
-To update the Raspberry Pi, clone this repository into the Raspberry Pi by running the following line in the Raspberry Pi's command line:
+To update the Raspberry Pi, clone this repository into the Raspberry Pi by running the following line either on the terminal you SSHed into the Pi with or in the Raspberry Pi's command line on VNC viewer:
 ```cpp
 git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
 ```
