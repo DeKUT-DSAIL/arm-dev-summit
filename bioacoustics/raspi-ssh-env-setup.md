@@ -32,7 +32,7 @@ To get the full desktop environment we can use VNC viewer. Follow the following 
 
 2. Creating virtual environment
 
-It is necessary that the Raspbian OS on your Pi be updated. If it is not updated, run the following commands on command line:
+It is necessary that the Raspbian OS on your Pi be updated. If it is not updated, run the following commands on the command line:
 ```cpp
 sudo apt-get update
 sudo apt-get upgrade
@@ -40,7 +40,7 @@ sudo reboot
 ```
 
 
-To update the Raspberry, clone this repository into the Raspberry Pi by running the following line either on the command line:
+To update the Raspberry Pi, clone this repository into the Raspberry Pi by running the following line either on the command line:
 ```cpp
 git clone https://github.com/kiariegabriel/bioacoustics-env.git
 ```
