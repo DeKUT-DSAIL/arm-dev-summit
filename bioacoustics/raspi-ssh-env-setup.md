@@ -19,7 +19,7 @@ Hit enter and under login in the window that will appear enter `pi` as shown bel
   <img width="auto" height="auto" src="/assets/img/putty-login.PNG"> 
 </p>
 
-Press enter and enter the password of the Raspberry and press enter once more. You should see the following window:
+Press enter and key in the password of the Raspberry and press enter once more. You should see the following window:
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/putty-logged-in.PNG"> 
