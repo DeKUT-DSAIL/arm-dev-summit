@@ -40,7 +40,7 @@ sudo reboot
 ```
 
 
-To update the Raspberry Pi, clone this repository into the Raspberry Pi by running the following line either on the command line:
+To create a virtual environment, clone this repository into the Raspberry Pi by running the following line on the command line:
 ```cpp
 git clone https://github.com/kiariegabriel/bioacoustics-env.git
 ```
