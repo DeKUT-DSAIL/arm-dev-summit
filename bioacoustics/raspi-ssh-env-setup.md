@@ -27,7 +27,7 @@ Press enter and key in the password of the Raspberry and press enter once more. 
 
 You have successfully accessed the command line of the Raspberry Pi using SSH.
 
-To get the full desktop environment we can use VNC viewer. Follow the following [link]() to learn how to use VNC viewer with the Raspberry Pi. 
+To get the full desktop environment we can use VNC viewer. Follow the following [link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/bioacoustics/vnc-viewer.md) to learn how to use VNC viewer with the Raspberry Pi. 
 
 
 2. Creating virtual environment
