@@ -29,7 +29,7 @@ You have successfully accessed the command line of the Raspberry Pi using SSH.
 
 To get the full desktop environment we can use VNC viewer. Follow the following [link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/bioacoustics/vnc-viewer.md) to learn how to use VNC viewer with the Raspberry Pi. 
 
-## Enabling GPIO
+#### Enabling GPIO
 
 We will be using GPIO pins so we need to enable them. Run the following command on the command line opened above:
 
@@ -47,7 +47,7 @@ Scroll down to Interface Options using up-down buttons and press enter. Select g
 
 
 
-2. Creating virtual environment
+# Creating virtual environment
 
 It is necessary that the Raspbian OS on your Pi be updated. If it is not updated, run the following commands on the command line:
 ```cpp
