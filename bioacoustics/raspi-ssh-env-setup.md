@@ -13,7 +13,7 @@ Open PuTTy and key in `raspberrypi.local` as shown below:
   <img width="auto" height="auto" src="/assets/img/putty-raspi-ssh.PNG"> 
 </p>
 
-Hit enter and under login in the window that will appear enter `pi` as shown below:
+Press enter and under login in the window that will appear enter `pi` as shown below:
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/putty-login.PNG"> 
@@ -28,6 +28,23 @@ Press enter and key in the password of the Raspberry and press enter once more. 
 You have successfully accessed the command line of the Raspberry Pi using SSH.
 
 To get the full desktop environment we can use VNC viewer. Follow the following [link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/bioacoustics/vnc-viewer.md) to learn how to use VNC viewer with the Raspberry Pi. 
+
+## Enabling GPIO
+
+We will be using GPIO pins so we need to enable them. Run the following command on the command line opened above:
+
+
+```cpp
+sudo raspi-config
+```
+and you should get the following:
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/5 headless-ssh.PNG"> 
+</p>
+
+Scroll down to Interface Options using up-down buttons and press enter. Select gpio option and enable it. Exit by selecting Finish using the 'sides' arrow keys and then press enter.
+
 
 
 2. Creating virtual environment
