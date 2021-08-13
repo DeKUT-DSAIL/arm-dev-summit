@@ -1,25 +1,20 @@
-# Acoustic Classification of Bird Species
+# Acoustic Monitoring of Ecosystems
 
-Welcome to our session on acoustic classification of bird species. During this session, we will be discussing on how we can classify birds from their vocalizations and set up hardware that we will use for this task. Let us dive into the task and feel free to direct any question at me.
+Welcome to our session on acoustic monitoring of ecosystems. During this session, we will be discussing on how we can leverage machine learning to perform automatic acoustic classification of birds in order to monitor our parks, conservancies and reserves. We will make a setup to demonstrate classification of bird from their vocalizations. Let us dive into the task and feel free to direct any question at me.
 
 ## Why are we really doing this?
 
 
-Automatic acoustic classification of bird species offers a tool to study our ecosystems for biodiversity conservation. it will help in continous and remote monitoring of our ecosystems. It can also be interesting for bird watchers and ornithologists.
-</details>
+Acoustic monitoring of ecosystems is an efficient and non invasive method that allow us to collect data continuously and remotely. Birds vocalize a lot and also respond quickly to enviromental changes making them to be an ideal indicator species for acoustic monitoring of the biosphere.
 
 ## What is the idea?
 
 
-
-The idea behind automatic acoustic classification is that animals and especially birds produce characteristic calls/songs that are unique to their species. We can be able to tell different species of birds by just listening to the sound they produce. A lot of data is collected from deploying acoustic sensors in our ecosystems. Manual classification of this data may turn to be a difficult task. However, we can automate the process of acoustic classification of bird species using machine learning. Using digital signal processing (DSP) techniques, we can be able to analyze different sound recordings on digital computers and be able to tell the different sounds from different bird species. Of interest is the frequency component of the recordings. By analyzing the spectrum of bird recordings, we can be able to tell different species of birds.
-
-
+The idea behind automatic acoustic classification is that birds produce characteristic calls/songs that are unique to their species. We can be able to tell different species of birds by just listening to the sound they produce. Acoustic data is collected by deploying acoustic sensors in the field. From analysis of this data, we can assess the state of our ecosystems. A lot of data is collected by the acoustic sensors. Manual classification of this data may turn to be a difficult task. However, we can automate the process by using acoustic sensors that automatically classify the recordings they capture. These sensors are loaded with machine learning models that have been pretrained on birds acoustic data for the classification.
 
 ## How does it work?
 
-
-Different sounds sound differently to our ears due to the different frequency components contained in each sound. If we can extract the frequency components of a sound, we can be able to describe that sound and also differentiate it from another sound by comparing their frequency components. Sounds produced by birds of the same species will have frequency components that are similar but different from sounds from another species. We can visualize the frequency components of a sound using a spectrogram. A spectrogram is a plot of frequency against time.
+Sound produced by a given bird species sounds differently from sound from another species due to difference in frequency components of these sounds. If we can extract the frequency components of a sound, we can be able to describe that sound and also differentiate it from another sound by comparing their frequency components. Sounds produced by birds of the same species will have frequency components that are unique to that species. We can visualize the frequency components of a sound using a spectrogram. A spectrogram is a plot of frequency against time.
 
 <p align="center">
   <img width="460" height="300" src="/assets/img/grey-backed.png">
@@ -31,7 +26,7 @@ Different sounds sound differently to our ears due to the different frequency co
   <em>Figure 1: SpectrogramS of a Grey-backed Camaroptera (left) and Hartlaub's Turacos (right)</em>
 </p>
 
-Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Turacos. By looking at the two spectrograms, we can see that the spectrum of the sounds from the two birds are different. We can then treat the spectrograms as images and feed them to a machine learning model for classification. Therefore, by computing spectrograms of different bird species' sounds we can train a machine learning model that will be used in acoustic classification of birds. 
+Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Turacos. By looking at the two spectrograms, we can see that the spectrum of the sounds from the two birds are different. We can then treat the spectrograms as images and feed them to a machine learning model for classification. Therefore, by computing spectrograms of different bird species' sounds we can train a machine learning model that will be used for acoustic classification of birds. 
 
 <p align="center">
   <img width="auto" height="300" src="/assets/img/dsp-ml.png"> 
@@ -43,87 +38,56 @@ Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Tur
 
 After training a model, we can then deploy it on an acoustic sensor (a Raspberry Pi based acoustic sensor will be used for our case) for automatic acoustic classification of birds in the ecosystems. 
 
-During this session, we will go through the steps of acquiring acoustic data of birds, preprocess the data, extract features from the data (compute spectrograms), train machine learning models using the spectrograms, test the models and then deploy the models on the Raspberry Pi.
-
+During this session, we will go through the steps of preparing a setup to demonstrate acoustic classification of birds.
 
 
 ## Requirements
 
-
-### Hardware
-
 <details>
   <summary>Click to expand!</summary>
 
-1. PC and access to the internet
-2. Raspberry Pi 3/4 and its power supply
-3. 8GB+ SD card
-4. USB microphone
-5. Mouse, keyboard, monitor and a HDMI cable (optinal)
+1. Raspberry Pi 3 and above and its power supply.
+2. An SD card of at least 8GB.
+3. USB microphone
+4. 3 220-10000 ohms resistors
+5. 3 LEDs
+5. 4 male-female jumper cables
+6. 4 connecting wires
+7. Breadboard
+8. A reliable Wi-Fi connection
+9. Personal computer
+10. A monitor, HDMI cable, mouse keyboard (optional)
   
 </details>
 
-### Software
 
-#### Installing software on PC
-
-<details>
-  <summary>Click to expand!</summary>
-
-
-1. Installing Python
-
-For this task, we will be using Python programming language so let's begin with installing it on our computers. If you have Python installed on your computer you can skip to the second requirement. Before installing Python on Windows, go to the[Microsoft Visual C++ downloads](https://www.python.org/downloads/), scroll down the page to the Visual Studio 2015, 2017 and 2019 section and download and install the Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019 for your platform. For computers running on windows and Mac OS X, download the [Python installer here](https://www.python.org/downloads/) and run it. For computers running on Linux distributions, run the following on terminal:  
-
-```cpp
-sudo apt install python3 python3-pip
-```
-
-2. Creating a Python environment
-
-Next, we need to create a Python environment and install the necessary libraries. To create the environment and activate it, run the following lines one at a time on the command prompt for Windows and terminal for Linux and Mac OS X:
-
-```cpp
-// Windows
-python -m venv 'environment name'
-'environment name'/Scripts/activate
-
-// Linux and Mac OS X
-python -m venv 'environment name'
-source 'environment name'/bin/activate
-```
-
-To install the requirements, run the following line on the command prompt or the terminal:
-```cpp
-pip install -r 'path to bioacoustics-requirements.txt'
-```
-  
-</details>
-
-#### Installing software on the Raspberry Pi
+## Installing Raspberry Pi OS
 
 <details>
   <summary>Click to expand!</summary>
 
+The Raspberry Pi needs an operating system for its operation. The following steps outline the process of installing the Raspberry Pi OS (formerly known as Raspbian) on the Raspberry Pi. 
 
-We are going to install Raspberry Pi OS and the requirements for this task.
-1. Installing Raspberry Pi OS
+### Step 1
+Download and install the [Raspberry Pi Imager here](https://www.raspberrypi.org/software/) on your PC.
 
-The Raspberry Pi needs an operating system for its operation. Download [Raspberry Pi Imager here](https://www.raspberrypi.org/software/), install it and follow the steps below to write the Raspberry Pi OS image on the SD Card.
-##### Step 1
-Run the Raspberry Pi Imager and the following window should appear:
+### Step 2
+Connect an SD card reader with an SD card of at least 8GB inside to your PC.
+
+### Step 3
+Open the Raspberry Pi Imager and the following window should appear:
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/1 raspbian.png"> 
 </p>
 
-##### Step 2.0
+### Step 4.0
 Choose operating system and select the option highlated below:
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/2 raspbian_LI.jpg"> 
 </p>
 
-##### Step 2.1
+### Step 4.1
 Press CTRL + SHIFT + X for advanced options and check and fill in the spaces as follows
 
 <p align="center">
@@ -132,14 +96,14 @@ Press CTRL + SHIFT + X for advanced options and check and fill in the spaces as 
 
 
 
-##### Step 3
+### Step 5
 Choose storage 
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/4 raspbian_LI.jpg"> 
 </p>
 
-##### Step 4
+### Step 6
 Write the image and verify the SD card by clicking yes.
 
 <p align="center">
@@ -158,10 +122,116 @@ When the writing is completed, the following should appear:
   <img width="auto" height="auto" src="/assets/img/7 raspbian.PNG"> 
 </p>
 
-The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. To use the Raspberry Pi, you can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Plug the monitor and the Pi to power and switch on the monitor. From here you can access the Raspberry Pi's full desktop environment. If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will use SSH to access the commandline of a headless Raspberry Pi.
-
-[SSHing into a headless](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/bioacoustics/sshing.md)
+The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. To use the Raspberry Pi, you can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Power the monitor and the Pi. From here you can access the Raspberry Pi's full desktop environment.
   
- </details>
+If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will use SSH to access the commandline of a headless Raspberry Pi.
+  
+</details>
+
+## Accessing Raspberry Pi command line using SSH
+  
+<details>
+  <summary>Click to expand!</summary>
+  
+After installing the Raspbian OS on the Raspberry Pi we need to access its the command line. This can be done using a monitor or another computer on the same network as the Raspberry Pi using SSH. The steps below are a guide on how to use access the command line of a Raspberry Pi using SSH 
+  
+### Step 1
+Download and install PuTTy [here](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi) for Windows and [here](https://the.earth.li/~sgtatham/putty/latest/putty-0.76.tar.gz) for Unix
+
+### Step 2
+Connect your PC/Mac to the same Wi-Fi you entered SSID and password to the Pi during the image writing process. Alternatively, you can connect the Raspberry to your computer using an ethernet cable and then power the Raspberry Pi.
+
+### Step 3
+Open PuTTy and key in `raspberrypi.local` as shown below:
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/putty-raspi-ssh.PNG"> 
+</p>
+
+Press enter and under login in the window that will appear enter `pi` as shown below:
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/putty-login.PNG"> 
+</p>
+
+Press enter and key in the password of the Raspberry and press enter once more. You should see the following window:
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/putty-logged-in.PNG"> 
+</p>
+
+You have successfully accessed the command line of the Raspberry Pi using SSH.
+
+To get the full desktop environment we can use VNC viewer. Follow the following [link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/bioacoustics/vnc-viewer.md) to learn how to use VNC viewer with the Raspberry Pi. 
+  
+</details>
+
+## Updating Raspberry Pi OS
+
+<details>
+  <summary>Click to expand!</summary>
+
+It is necessary that the Raspberry Pi OS on your Pi be updated. To update the OS, run the following commands on the command line:
+```cpp
+sudo apt-get update
+sudo apt-get upgrade
+sudo reboot
+```
+</details>
+
+## Configuring the Raspberry Pi
+
+<details>
+  <summary>Click to expand!</summary>
+
+### Enabling GPIO
+  
+We will be using GPIO pins so we need to enable them. Run the following command on the command line:
+
+
+```cpp
+sudo raspi-config
+```
+and you should get the following:
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/5 headless-ssh.PNG"> 
+</p>
+
+Scroll down to Interface Options using up-down buttons and press enter. Select gpio option and enable it. Exit by selecting Finish using the 'sides' arrow keys and then press enter.
+
+</details>
+
+## Cloning the repository
+
+<details>
+  <summary>Click to expand!</summary>
+  
+We will clone the repository containing the software requirements for this demo. Run the following command on the command line:
+  
+```cpp
+git clone https://github.com/kiariegabriel/bioacoustics-env.git
+```
+  
+</details>
+
+## Creating virtual environment
+
+<details>
+  <summary>Click to expand!</summary>
+
+
+To create a virtual environment run the following commands on the command line one by one
+
+```cpp
+cp bioacoustics-env/bioacoustics-env-bash ./
+chmod +x bioacoustics-env-bash
+./bioacoustics-env-bash
+```
+Enter yes whenever prompted:
+
+
+Now the Raspberry Pi is ready for use in this task.
+
+</details>
  
- After installing the Raspbian OS on the Raspberry Pi we need to access its the command line. This can be done using another computer on the same network as the Raspberry Pi using SSH. Learn how to use SSH [here](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/bioacoustics/sshing.md).
