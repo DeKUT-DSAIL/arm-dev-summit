@@ -199,7 +199,7 @@ To configure display settings, scroll down to `Display Options` in the `raspi-co
 We will be need enable VNC server so we can access the Raspberry Pi full desktop environment using VNC viewer on our computer. In the `raspi-config` window scroll down to `Interface Options` using up-down keys and press enter. Scroll to the `VNC` option using up-down buttons and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you VNC server has been enabled will pop up. Press enter to exit. 
 
 ### Enabling GPIO
-Still in the `raspi-config` window, we will need to enable GPIO pins. Scroll down to `Interface Options`, press enter, scroll to the `Remote GPIO` option and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you will pop up GPIO  has been enabled will pop up. Press enter to exit.
+Still in the `raspi-config` window, we will need to enable GPIO pins. Scroll down to `Interface Options`, press enter, scroll to the `Remote GPIO` option and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you GPIO has been enabled will pop up. Press enter to exit.
 
   
 To exit `(raspi-config)` select Finish using the 'sides' arrow keys and then press enter.
