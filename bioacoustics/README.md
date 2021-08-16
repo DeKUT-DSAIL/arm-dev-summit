@@ -210,7 +210,7 @@ Scroll down to Interface Options using up-down buttons and press enter. Select g
 We will clone the repository containing the software requirements for this demo. Run the following command on the command line:
   
 ```cpp
-git clone https://github.com/kiariegabriel/bioacoustics-env.git
+git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
 ```
   
 </details>
