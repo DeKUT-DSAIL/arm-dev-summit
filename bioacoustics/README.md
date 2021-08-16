@@ -251,9 +251,11 @@ sudo reboot
   
 Enter `Y` when prompted
   
+Once the Raspberry Pi has rebooted it will reconnect automatically with VNC viewer.
+  
 </details>
 
-Once the Raspberry Pi has rebooted it will reconnect automatically with VNC viewer.
+
   
 
 ## Cloning the repository
