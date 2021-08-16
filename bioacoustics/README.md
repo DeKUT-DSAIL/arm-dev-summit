@@ -17,8 +17,8 @@ The idea behind automatic acoustic classification is that birds produce characte
 Sound produced by a given bird species sounds differently from sound from another species due to difference in frequency components of these sounds. If we can extract the frequency components of a sound, we can be able to describe that sound and also differentiate it from another sound by comparing their frequency components. Sounds produced by birds of the same species will have frequency components that are unique to that species. We can visualize the frequency components of a sound using a spectrogram. A spectrogram is a plot of frequency against time.
 
 <p align="center">
-  <img width="460" height="300" src="/assets/img/grey-backed.png">
-  <img width="460" height="300" src="/assets/img/hartlaub's-turacos-spectrogram.png">
+  <img width="460" height="300" src="/assets/img/18 grey-backed.png">
+  <img width="460" height="300" src="/assets/img/19 hartlaub's-turacos-spectrogram.png">
   
 </p>
 
@@ -29,7 +29,7 @@ Sound produced by a given bird species sounds differently from sound from anothe
 Figure 1 above shows spectrograms of a Greybacked Camaroptera and Hartlaub's Turacos. By looking at the two spectrograms, we can see that the spectrum of the sounds from the two birds are different. We can then treat the spectrograms as images and feed them to a machine learning model for classification. Therefore, by computing spectrograms of different bird species' sounds we can train a machine learning model that will be used for acoustic classification of birds. 
 
 <p align="center">
-  <img width="auto" height="300" src="/assets/img/dsp-ml.png"> 
+  <img width="auto" height="300" src="/assets/img/17 dsp-ml.png"> 
 </p>
 
 <p align="center"> 
