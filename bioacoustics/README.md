@@ -177,6 +177,9 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo reboot
 ```
+  
+Enter `Y` when prompted
+  
 </details>
 
 Once the Raspberry Pi has rebooted, the currently opened session on the PuTTy will be terminated. To access the Pi again, we will need to follow the procedure of establishing SSH again. Close the current PuTTy window and restart a new window and proceed with the steps discussed above.
