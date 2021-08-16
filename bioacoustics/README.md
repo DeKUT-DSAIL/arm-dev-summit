@@ -49,14 +49,14 @@ During this session, we will go through the steps of preparing a setup to demons
 1. Raspberry Pi 3 and above and its power supply.
 2. An SD card of at least 8GB.
 3. USB microphone
-4. 3 220-10000 ohms resistors
+4. 3 220/470 ohms resistors
 5. 3 LEDs
 5. 4 male-female jumper cables
 6. 4 connecting wires
 7. Breadboard
 8. A reliable Wi-Fi connection
 9. Personal computer
-10. A monitor, HDMI cable, mouse keyboard (optional)
+10. A monitor, HDMI cable, mouse and keyboard (optional)
   
 </details>
 
