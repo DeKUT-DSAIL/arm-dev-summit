@@ -179,6 +179,8 @@ sudo reboot
 ```
 </details>
 
+Once the Raspberry Pi has rebooted, the currently opened session on the PuTTy will be terminated. To access the Pi again, we will need to follow the procedure of establishing SSH again. Close the current PuTTy window and restart a new window and proceed with the steps discussed above.
+
 ## Configuring the Raspberry Pi
 
 <details>
@@ -235,3 +237,15 @@ Now the Raspberry Pi is ready for use in this task.
 
 </details>
  
+
+## Preparing models test setup
+
+<details>
+  <summary>Click to expand!</summary>
+  We will demonstrate acoustic classification of birds using a Raspberry Pi, some LEDs, and a USB microphone. To prepare the setup, we need to shutdown the Raspberry Pi first and disconnect it from power. Run the following command on the previously opened command line:
+  ```cpp
+sudo shutdown now
+```
+Wait until the activity (green) LED stops blinking before disconnecting the Raspberry Pi from power. After disconnecting the Raspberry Pi from power, we will proceed to prepare the models test setup. The diagram below shows the Raspberry Pi pinout:
+  
+</details>
