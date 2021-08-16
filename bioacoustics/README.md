@@ -179,9 +179,7 @@ Note the IP address down.
 <details>
   <summary>Click to expand!</summary>
 
-### Enabling GPIO and VNC server
-  
-We will be need enable GPIO pins and VNC server. Run the following command on the command line:
+Run the following command on the command line:
 
 
 ```cpp
@@ -192,11 +190,17 @@ and you should get the following `Raspberry Pi Software Configuration Tool (rasp
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/5 headless-ssh.PNG"> 
 </p>
-
-Scroll down to `Interface Options` using up-down buttons and press enter. Scroll to the `VNC` option using up-down buttons and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you VNC server has been enabled will pop up. Press enter to exit. Still in the `raspi-config` window, we will need to do the same for GPIO pins. Scroll down to `Interface Options`, pressing enter, scroll to the `Remote GPIO` option and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you will pop up GPIO  has been enabled will pop up. Press enter to exit.
   
 ### Setting Display options
-To configure display settings, scroll down to `Display Options` in the `raspi-config` window and press enter. Select `D1 Resolution` option and press enter. Select the ` DMT Mode 85 1280x720 60Hz 16:9` option and press enter. A window indicating `The resolution is set to DMT mode 85` will pop up. Press enter to exit 
+To configure display settings, scroll down to `Display Options` in the `raspi-config` window using up-down keys and press enter. Select `D1 Resolution` option and press enter. Select the ` DMT Mode 85 1280x720 60Hz 16:9` option and press enter. A window indicating `The resolution is set to DMT mode 85` will pop up. Press enter to exit 
+  
+### Enabling VNC server
+  
+We will be need enable VNC server so we can access the Raspberry Pi full desktop environment using VNC viewer on our computer. In the `raspi-config` window scroll down to `Interface Options` using up-down keys and press enter. Scroll to the `VNC` option using up-down buttons and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you VNC server has been enabled will pop up. Press enter to exit. 
+
+### Enabling GPIO
+Still in the `raspi-config` window, we will need to enable GPIO pins. Scroll down to `Interface Options`, press enter, scroll to the `Remote GPIO` option and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you will pop up GPIO  has been enabled will pop up. Press enter to exit.
+
   
 To exit `(raspi-config)` select Finish using the 'sides' arrow keys and then press enter.
 
