@@ -257,7 +257,7 @@ Wait until the activity (green) LED stops blinking before disconnecting the Rasp
   <em>Pinout of the Raspberry Pi</em>
 </p>
   
-Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal is connected to the Raspberry Pi's GPIO pin through a resistor.
+Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal (the longer pin) of the LED is connected to the Raspberry Pi's GPIO pin through a resistor.
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/26 model-test-setup.jpg">  
@@ -266,5 +266,7 @@ Make the connections as shown below. Note the polarity of the LED shown in the d
 <p align="center"> 
   <em>Model test setup</em>
 </p>
+  
+Plug in the microphone into one of the Raspberry Pi's USB port and power the Raspberry Pi. Repeat the procedure discussed earlier to access the Pi's commandline using SSH. The setup is ready for models testing
   
 </details>
