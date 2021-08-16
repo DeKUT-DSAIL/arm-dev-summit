@@ -226,7 +226,7 @@ Open VNC viewer and enter the IP address of the Pi as shown below and press ente
 When prompted to enter username, enter 'pi' and then enter the password set during image writing as shown below. Check the 'Remember password' box.
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/11 headless-ssh.PNG"> 
+  <img width="auto" height="auto" src="/assets/img/11 headless-pi.PNG"> 
 </p>
 
 You should now be able to access the whole desktop environment as shown below:
