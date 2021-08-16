@@ -7,8 +7,8 @@ The models were trained and then saved for testing. An input pipeline that conti
 The models were trained and saved on a computer. They were then loaded into a Raspberry Pi for testing. The Raspberry Pi runs on a 32-bit OS and therefore unpacking a Random Forest Model trained on a 64-bit computer is not possible (at the time of writing this). Therefore, the Random Forest Classifier had to be trained and saved on the Raspberry Pi. To train and saver the Random Forest Classifier on the Raspberry Pi, run the `raspi_model_test.py` program. To spice up the setup, LEDs of different color connected to Raspberry Pi GPIO pin have been used to indicate different species detected in a playback as shown below:
 
 <p align="center">
-  <img width="auto" height="300" src="/assets/img/rpi-bioacoustics-leds.jpg">
-  <img width="auto" height="300" src="/assets/img/rpi-led-setup.jpg"> 
+  <img width="auto" height="300" src="/assets/img/27 rpi-bioacoustics-leds.jpg">
+  <img width="auto" height="300" src="/assets/img/28 rpi-led-setup.jpg"> 
 </p>
 
 <p align="center"> 
