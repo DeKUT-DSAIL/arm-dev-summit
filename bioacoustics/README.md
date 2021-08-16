@@ -145,7 +145,7 @@ Download and install PuTTy [here](https://the.earth.li/~sgtatham/putty/latest/w6
 Open PuTTy and key in `raspberrypi.local` as shown below:
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/putty-raspi-ssh.PNG"> 
+  <img width="auto" height="auto" src="/assets/img/24 putty-raspi-ssh.PNG"> 
 </p>
 
 Press enter and under login in the window that will appear enter `pi` as shown below:
