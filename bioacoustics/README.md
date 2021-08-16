@@ -48,15 +48,16 @@ During this session, we will go through the steps of preparing a setup to demons
 
 1. Raspberry Pi 3 and above and its power supply.
 2. An SD card of at least 8GB.
-3. USB microphone
-4. 3 220/470 ohms resistors
-5. 3 LEDs
-5. 4 male-female jumper cables
-6. 4 connecting wires
-7. Breadboard
-8. A reliable Wi-Fi connection
-9. Personal computer
-10. A monitor, HDMI cable, mouse and keyboard (optional)
+3. Ethernet cable
+4. USB microphone
+5. 3 220/470 ohms resistors
+6. 3 LEDs
+7. 4 male-female jumper cables
+8. 4 connecting wires
+9. Breadboard
+10. A reliable Wi-Fi connection
+11. Personal computer
+12. A monitor, HDMI cable, mouse and keyboard (optional)
   
 </details>
 
@@ -122,10 +123,7 @@ When the writing is completed, the following should appear:
   <img width="auto" height="auto" src="/assets/img/7 raspbian.PNG"> 
 </p>
 
-The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. To use the Raspberry Pi, you can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Power the monitor and the Pi. From here you can access the Raspberry Pi's full desktop environment.
-  
-If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will use SSH to access the commandline of a headless Raspberry Pi.
-  
+The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. 
 </details>
 
 ## Accessing Raspberry Pi command line using SSH
@@ -133,13 +131,15 @@ If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse
 <details>
   <summary>Click to expand!</summary>
   
-After installing the Raspbian OS on the Raspberry Pi we need to access its the command line. This can be done using a monitor or another computer on the same network as the Raspberry Pi using SSH. The steps below are a guide on how to use access the command line of a Raspberry Pi using SSH 
+After installing the Raspbian OS on the Raspberry Pi we need to access its the command line. We can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Power the monitor and the Pi. From here you can access the Raspberry Pi's full desktop environment.
   
-### Step 1
-Download and install PuTTy [here](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi) for Windows and [here](https://the.earth.li/~sgtatham/putty/latest/putty-0.76.tar.gz) for Unix
+If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will use SSH to access the commandline of a headless Raspberry Pi with another computer. The steps below are a guide on how to use access the command line of a Raspberry Pi using SSH 
 
+### Step 1
+Connect the Ethernet cable to the Ethernet ports on your computer and the Raspberry Pi and power the Raspberry Pi. Ensure that the green LED at the Raspberry Pi's Ethernet port is blinking to show a connection has been established between your computer and the Pi. 
+  
 ### Step 2
-Connect your PC/Mac to the same Wi-Fi you entered SSID and password to the Pi during the image writing process. Alternatively, you can connect the Raspberry to your computer using an ethernet cable and then power the Raspberry Pi.
+Download and install PuTTy [here](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi) for Windows and [here](https://the.earth.li/~sgtatham/putty/latest/putty-0.76.tar.gz) for Unix
 
 ### Step 3
 Open PuTTy and key in `raspberrypi.local` as shown below:
@@ -151,27 +151,94 @@ Open PuTTy and key in `raspberrypi.local` as shown below:
 Press enter and under login in the window that will appear enter `pi` as shown below:
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/putty-login.PNG"> 
+  <img width="auto" height="auto" src="/assets/img/23 putty-login.PNG"> 
 </p>
 
 Press enter and key in the password of the Raspberry and press enter once more. You should see the following window:
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/putty-logged-in.PNG"> 
+  <img width="auto" height="auto" src="/assets/img/22 putty-logged-in.PNG"> 
 </p>
 
 You have successfully accessed the command line of the Raspberry Pi using SSH.
+  
+### Step 4
+Run the following on the command line to obtain the IP address of the Pi.
 
-To get the full desktop environment we can use VNC viewer. Follow the following [link](https://github.com/DeKUT-DSAIL/arm-dev-summit/blob/main/bioacoustics/vnc-viewer.md) to learn how to use VNC viewer with the Raspberry Pi. 
+```cpp
+hostname -I
+```
+  
+Note the IP address down.
   
 </details>
+
+
+## Configuring the Raspberry Pi
+
+<details>
+  <summary>Click to expand!</summary>
+
+### Enabling GPIO and VNC server
+  
+We will be need enable GPIO pins and VNC server. Run the following command on the command line:
+
+
+```cpp
+sudo raspi-config
+```
+and you should get the following `Raspberry Pi Software Configuration Tool (raspi-config)` window:
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/5 headless-ssh.PNG"> 
+</p>
+
+Scroll down to `Interface Options` using up-down buttons and press enter. Scroll to the `VNC` option using up-down buttons and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you VNC server has been enabled will pop up. Press enter to exit. Still in the `raspi-config` window, we will need to do the same for GPIO pins. Scroll down to `Interface Options`, pressing enter, scroll to the `Remote GPIO` option and press enter. When prompted to enable it scroll to the `<Yes>` option using side arrow keys and press enter. A window to notify you will pop up GPIO  has been enabled will pop up. Press enter to exit.
+  
+### Setting Display options
+To configure display settings, scroll down to `Display Options` in the `raspi-config` window and press enter. Select `D1 Resolution` option and press enter. Select the ` DMT Mode 85 1280x720 60Hz 16:9` option and press enter. A window indicating `The resolution is set to DMT mode 85` will pop up. Press enter to exit 
+  
+To exit `(raspi-config)` select Finish using the 'sides' arrow keys and then press enter.
+
+</details>
+  
+## Accessing full desktop environment using VNC 
+  
+<details>
+  <summary>Click to expand!</summary>
+
+To get the full desktop environment we can use VNC viewer. The following steps are a guide on how to use VNC viewer with the Raspberry Pi: 
+  
+### Step 1
+We will use need to download and install [VNC viewer](https://www.realvnc.com/en/connect/download/viewer/).
+  
+### Step 2
+
+Open VNC viewer and enter the IP address of the Pi as shown below and press enter:
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/9 headless-ssh.PNG"> 
+</p>
+
+When prompted to enter username, enter 'pi' and then enter the password set during image writing as shown below. Check the 'Remember password' box.
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/11 headless-ssh.PNG"> 
+</p>
+
+You should now be able to access the whole desktop environment as shown below:
+
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/12 headless-ssh.PNG"> 
+</p>
+
+ </details>
 
 ## Updating Raspberry Pi OS
 
 <details>
   <summary>Click to expand!</summary>
 
-It is necessary that the Raspberry Pi OS on your Pi be updated. To update the OS, run the following commands on the command line:
+It is necessary that the Raspberry Pi OS on your Pi be updated. To update the OS, open the command line by clicking the terminal icon on the taskbar located at top of the desktop interface and run the following commands on the command line:
 ```cpp
 sudo apt-get update
 sudo apt-get upgrade
@@ -182,30 +249,8 @@ Enter `Y` when prompted
   
 </details>
 
-Once the Raspberry Pi has rebooted, the currently opened session on the PuTTy will be terminated. To access the Pi again, we will need to follow the procedure of establishing SSH again. Close the current PuTTy window and restart a new window and proceed with the steps discussed above.
-
-## Configuring the Raspberry Pi
-
-<details>
-  <summary>Click to expand!</summary>
-
-### Enabling GPIO
+Once the Raspberry Pi has rebooted it will reconnect automatically with VNC viewer.
   
-We will be using GPIO pins so we need to enable them. Run the following command on the command line:
-
-
-```cpp
-sudo raspi-config
-```
-and you should get the following:
-
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/5 headless-ssh.PNG"> 
-</p>
-
-Scroll down to Interface Options using up-down buttons and press enter. Select gpio option and enable it. Exit by selecting Finish using the 'sides' arrow keys and then press enter.
-
-</details>
 
 ## Cloning the repository
 
@@ -245,7 +290,7 @@ Now the Raspberry Pi is ready for use in this task.
 
 <details>
   <summary>Click to expand!</summary>
-  We will demonstrate acoustic classification of birds using a Raspberry Pi, some LEDs, and a USB microphone. To prepare the setup, we need to shutdown the Raspberry Pi first and disconnect it from power. Run the following command on the previously opened command line:
+  We will demonstrate acoustic classification of birds using a Raspberry Pi, some LEDs, and a USB microphone. To prepare the setup, we need to shutdown the Raspberry Pi first and disconnect it from power. Run the following command on the command line:
   
 ```cpp
 sudo shutdown now
@@ -270,6 +315,6 @@ Make the connections as shown below. Note the polarity of the LED shown in the d
   <em>Model test setup</em>
 </p>
   
-Plug in the microphone into one of the Raspberry Pi's USB port and power the Raspberry Pi. Repeat the procedure discussed earlier to access the Pi's commandline using SSH. The setup is ready for models testing
+Plug in the microphone into one of the Raspberry Pi's USB port and power the Raspberry Pi. Follow the steps outlined above to access the Raspberry Pi's Desktop on VNC viewer. The setup is ready for models testing
   
 </details>
