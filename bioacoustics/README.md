@@ -280,9 +280,9 @@ git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
 To create a virtual environment run the following commands on the command line one by one
 
 ```cpp
-cp bioacoustics-env/bioacoustics-env-bash ./
-chmod +x bioacoustics-env-bash
-./bioacoustics-env-bash
+cp arm-dev-summit/bioacoustics/env-setup-bash ./
+chmod +x env-setup-bash
+./env-setup-bash
 ```
 Enter yes whenever prompted:
 
