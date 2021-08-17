@@ -242,7 +242,7 @@ You should now be able to access the whole desktop environment as shown below:
 <details>
   <summary>Click to expand!</summary>
 
-It is necessary that the Raspberry Pi OS on your Pi be updated. The Raspberry Pi needs to be connected to the internet for updating. The Raspberry Pi should connect automatically to the internet whose SSID and password was entered during image writing. If not, click on the two arrows at the right of the Pi's taskbar and choose the Wi-Fi to connect to and enter its password if it is password protected and press enter. To update the OS, open the command line by clicking the terminal icon on the taskbar located at top of the desktop interface and run the following commands on the command line:
+It is necessary that the Raspberry Pi OS on your Pi be updated. The Raspberry Pi needs to be connected to the internet for updating. The Raspberry Pi should connect automatically to the internet whose SSID and password was entered during image writing. If not, click on the two arrows at the right of the Pi's taskbar (located at top of the desktop interface) and choose the Wi-Fi to connect to and enter its password if it is password protected and press enter. To update the OS, open the command line by clicking the terminal icon on the taskbar and run the following commands on the command line:
 ```cpp
 sudo apt-get update
 sudo apt-get upgrade
