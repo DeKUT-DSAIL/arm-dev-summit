@@ -311,7 +311,7 @@ Wait until the activity (green) LED stops blinking before disconnecting the Rasp
   <em>Pinout of the Raspberry Pi</em>
 </p>
   
-Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal (the longer pin) of the LED is connected to the Raspberry Pi's GPIO pin through a resistor.
+We will be using `GPIO 18, GPIO 23, GPIO 24 and Ground` Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal (the longer pin) of the LED is connected to the Raspberry Pi's GPIO pin through a resistor.
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/26 model-test-setup.jpg">  
