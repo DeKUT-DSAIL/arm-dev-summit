@@ -82,7 +82,7 @@ Open the Raspberry Pi Imager and the following window should appear:
 </p>
 
 ### Step 4.0
-Choose operating system and select the option highlated below:
+Choose operating system and select the option highlighted below:
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/2 raspbian_LI.jpg"> 
@@ -131,9 +131,9 @@ The SD card is now ready and can be plugged into the SD card slot of the Raspber
 <details>
   <summary>Click to expand!</summary>
   
-After installing the Raspbian OS on the Raspberry Pi we need to access its the command line. We can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI's ports on the monitor and the Pi. Power the monitor and the Pi. From here you can access the Raspberry Pi's full desktop environment.
+After installing the Raspbian OS on the Raspberry Pi we need to access its the command line. We can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI ports on the monitor and the Pi. Power the monitor and the Pi. From here you can access the Raspberry Pi's full desktop environment.
   
-If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will use SSH to access the commandline of a headless Raspberry Pi with another computer. The steps below are a guide on how to use access the command line of a Raspberry Pi using SSH 
+If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will use SSH to access the commandline of a headless Raspberry Pi with another computer. The steps below are a guide on how to access the command line of a Raspberry Pi using SSH 
 
 ### Step 1
 Connect the Ethernet cable to the Ethernet ports on your computer and the Raspberry Pi and power the Raspberry Pi. Ensure that the green LED at the Raspberry Pi's Ethernet port is blinking to show a connection has been established between your computer and the Pi. 
