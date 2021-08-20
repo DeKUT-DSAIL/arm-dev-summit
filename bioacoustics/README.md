@@ -311,7 +311,15 @@ Wait until the activity (green) LED stops blinking before disconnecting the Rasp
   <em>Pinout of the Raspberry Pi</em>
 </p>
   
-We will be using `GPIO 18`, `GPIO 23`, `GPIO 24` and `Ground (pin 6)`. Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal (the longer pin) of the LED is connected to the Raspberry Pi's GPIO pin through a resistor and the shorter pin to the ground rail.
+We will be using `GPIO 18`, `GPIO 23`, `GPIO 24` and `Ground (pin 6)`. Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal (the longer pin) of the LED is connected to the Raspberry Pi's GPIO pin through a resistor and the shorter pin to the ground rail. The lines on the figure that follow indicate continuity of holes in the breadboard:
+ 
+ <p align="center">
+  <img width="auto" height="auto" src="/assets/img/31 breadboard-continuituy.png">  
+</p>
+  
+ <p align="center"> 
+  <em>Common holes in a breadboard</em>
+</p>
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/26 model-test-setup.jpg">  
