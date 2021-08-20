@@ -263,7 +263,7 @@ Once the Raspberry Pi has rebooted it will reconnect automatically with VNC view
 <details>
   <summary>Click to expand!</summary>
   
-We will clone the repository containing the software requirements for this demo. Run the following command on the command line:
+We will clone the repository containing the software requirements for this demo. Github changed from use of password to `Personal Access TokenS (PATs)` for authentication. Follow this [link](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to learn how to generate a PAT. Use the PAT as your password when prompted. Run the following command on the command line:
   
 ```cpp
 git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
@@ -284,7 +284,7 @@ cp arm-dev-summit/bioacoustics/env-setup-bash ./
 chmod +x env-setup-bash
 ./env-setup-bash
 ```
-Enter yes whenever prompted:
+Enter yes whenever prompted. Ignore the *Failed to build llvmlite* warning.
 
 
 Now the Raspberry Pi is ready for use in this task.
