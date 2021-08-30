@@ -73,19 +73,12 @@ The Logic level converter will help in preventing the Arduino Nano from frying t
 - :hash: step Seven = **Uploading the code and connecting the components on the breadboard**
 1. After changing the keys on your code, compile it and upload it to the Arduino Nano using the cable provided. 
 2. If the upload is a success, disconnect the Nano and connect all the components on the breadboard as shown below.
-
 - *logic_level converter-Tranceiver connection*
-
 ![Arduino](/assets/img/lora-voltage.PNG)
-
 - *Arduino-Logic_level converter connection*
-
 ![Arduino](/assets/img/arduino-con.PNG)
-
 - *Arduino-Sensor connection*
-
 ![Arduino](/assets/img/SENSOR-CONN.PNG)
-
 - *Final result*
 ![Arduino](/assets/img/results5.PNG)
 
