@@ -78,8 +78,11 @@ The Logic level converter will help in preventing the Arduino Nano from frying t
 - *Arduino-Logic_level converter connection*
 ![Arduino](/assets/img/arduino-con.PNG)
 - *Arduino-Sensor connection*
+
 ![Arduino](/assets/img/SENSOR-CONN.PNG)
+
 - *Final result*
+
 ![Arduino](/assets/img/results5.PNG)
 
 3. Once the connection is done, power the nano by connecting it to your computer.
