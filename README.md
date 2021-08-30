@@ -7,7 +7,7 @@
 ![cover page image](/assets/img/jason.jpg)
 
 #### Brief Bio
-I am currently a Research intern at Centre for Data Science and Artificial intelligence(DSAIL) Dedan Kimathi University of Technology(DeKUT).I am also a Graduate Electrical Engineer and Data Scientist who excels at Machine Learning, IoT/Sensor systems development, IoT/Sensor systems deployment, data analysis, data visualization, and Electrical hardware (PCB) Design. In this session am  taking audiences through a river Water level Monitoring project. Data collected can be used to diagnose the status of the river catchment. 
+I am currently a Research intern at Centre for Data Science and Artificial intelligence(DSAIL) Dedan Kimathi University of Technology(DeKUT).I am also a Graduate Electrical Engineer and Data Scientist with experience in Machine Learning, IoT/Sensor systems development, IoT/Sensor systems deployment, data analysis, data visualization, and Electrical hardware (PCB) Design. In this session am  taking audiences through a river Water level Monitoring project. Data collected can be used to diagnose the status of the river catchment. 
 - :link: [Linkedin](https://www.linkedin.com/in/kabi-jason-b14b68164)
 - :link: Email: jason.kabi@dkut.ac.ke
 
