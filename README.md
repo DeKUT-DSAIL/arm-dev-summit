@@ -3,17 +3,22 @@
 ## Hosted by
 
 ### Jason Kabi
+
 ![cover page image](/assets/img/jason.jpg)
-#### About
+
+#### Brief Bio
 I am currently a Research intern at Centre for Data Science and Artificial intelligence(DSAIL) Dedan Kimathi University of Technology(DeKUT).I am also a Graduate Electrical Engineer and Data Scientist who excels at Machine Learning, IoT/Sensor systems development, IoT/Sensor systems deployment, data analysis, data visualization, and Electrical hardware (PCB) Design. In this session am  taking audiences through a river Water level Monitoring project. Data collected can be used to diagnose the status of the river catchment. 
 - :link: [Linkedin](https://www.linkedin.com/in/kabi-jason-b14b68164)
 - :link: Email: jason.kabi@dkut.ac.ke
 
 ### Gabriel Kiarie
+
 ![cover page image](/assets/img/passport.jpg)
-#### About
+
+#### Brief Bio
 
 **## Session Details**
+
 Ecosystems around the world are suffering from degradation due to human activity. To determine ecosystems at risk, it is important to monitor these ecosystems continuously. However, conservation budgets are small and we need to leverage technology to quickly identify areas in need of conservation interventions. In this workshop we aim to demonstrate two technologies namely acoustic monitoring of bird species and anomaly detection in sensor data. We will leverage data collected in ecosystems in Kenya and demonstrate how these systems are built using low cost hardware.
 
 ### Key Takeaways
