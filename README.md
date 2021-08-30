@@ -1,5 +1,5 @@
 
-# Welcome!! to the ARM DEV SUMMIT 2021  - Environmental Data Aquisition and Processing session (Session ID 506437) 
+# ARM DEV SUMMIT 2021 - Environmental Data Aquisition and Processing session (Session ID 506437) 
 ## Hosted by
 
 ### Jason Kabi
@@ -17,7 +17,7 @@ I am currently a Research intern at Centre for Data Science and Artificial intel
 
 #### Brief Bio
 
-**## Session Details**
+# Session Details
 
 Ecosystems around the world are suffering from degradation due to human activity. To determine ecosystems at risk, it is important to monitor these ecosystems continuously. However, conservation budgets are small and we need to leverage technology to quickly identify areas in need of conservation interventions. In this workshop we aim to demonstrate two technologies namely acoustic monitoring of bird species and anomaly detection in sensor data. We will leverage data collected in ecosystems in Kenya and demonstrate how these systems are built using low cost hardware.
 
