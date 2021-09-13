@@ -183,6 +183,9 @@ def main():
     if args.model == 'rf':
         clf = pickle.load(open(os.path.join(args.models_dir, args.model + '.pickle'), 'rb'))
 
+    if args.model == 'rf64bit':
+        clf = pickle.load(open(os.path.join(args.models_dir, args.model + '.pickle'), 'rb'))
+
     if args.input == 'file':
         try:
             audio,_ = librosa.load(args.test_file_path, sr=sampling_rate)
