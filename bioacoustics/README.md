@@ -130,7 +130,7 @@ When the writing is completed, the following should appear:
   <img width="auto" height="auto" src="/assets/img/8 write complete.jpg"> 
 </p>
 
-The SD card is now ready and can be plugged into the SD card slot of the Jetson Nano. 
+Unplug the SD Card and be plug it into the SD card slot of the Jetson Nano. 
 </details>
 
 ## Accessing Raspberry Pi command line using SSH
