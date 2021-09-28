@@ -46,8 +46,8 @@ During this session, we will go through the steps of preparing a setup to demons
 <details>
   <summary>Click to expand!</summary>
 
-1. Raspberry Pi 3 and above and its power supply.
-2. An SD card of at least 8GB.
+1. Jetson Nano Developer Kit and its power supply(5V, 3A).
+2. An SD card of at least 32GB.
 3. Ethernet cable
 4. USB microphone
 5. 3 220/470 ohms resistors
@@ -62,68 +62,75 @@ During this session, we will go through the steps of preparing a setup to demons
 </details>
 
 
-## Installing Raspberry Pi OS
+## Writing image in the SD Card
 
 <details>
   <summary>Click to expand!</summary>
 
 The Raspberry Pi needs an operating system for its operation. The following steps outline the process of installing the Raspberry Pi OS (formerly known as Raspbian) on the Raspberry Pi. 
 
-### Step 1
-Download and install the [Raspberry Pi Imager here](https://www.raspberrypi.org/software/) on your PC.
-
-### Step 2
-Connect an SD card reader with an SD card of at least 8GB inside to your PC.
+  ### Step 1
+      
+  Download the [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-sd-card-image) and note where it is saved.
+      
+  ### Step 2
+Download, install and launch the Raspberry Pi imager for [Windows](https://downloads.raspberrypi.org/imager/imager_latest.exe), [macOS](https://downloads.raspberrypi.org/imager/imager_latest.dmg) and [Ubuntu x86](https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb). You will get the following window:
+  
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/1 raspberry pi imager.jpg"> 
+</p>
 
 ### Step 3
-Open the Raspberry Pi Imager and the following window should appear:
+Connect the SD Card to your computer using an SD Card reader or using the SD Card slot if the computer has one
+
+### Step 4
+Click on `CHOOSE OS`  and select the option `Use Custom` as shown below:
+ 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/1 raspbian.png"> 
+  <img width="auto" height="auto" src="/assets/img/2. use custom.jpg"> 
+</p>
+  
+On the window that will popup, access the location where the Jetson Nano Developer Kit SD Card Image was saved. Select the image and click on open as shown below:
+  
+<p align="center">
+  <img width="auto" height="auto" src="/assets/img/3 image-select.jpg"> 
 </p>
 
-### Step 4.0
-Choose operating system and select the option highlighted below:
-
+Once in the home page of the Raspberry Pi imager, press CTRL + SHIFT + X for advanced options and uncheck all options if any is checked as shown below and save:
+  
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/2 raspbian_LI.jpg"> 
+  <img width="auto" height="auto" src="/assets/img/4 advanced options.jpg"> 
 </p>
-
-### Step 4.1
-Press CTRL + SHIFT + X for advanced options and check and fill in the spaces as follows
-
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/3 raspbian.PNG"> 
-</p>
-
 
 
 ### Step 5
-Choose storage 
+Next click on `CHOOSE STORAGE` button and select the SD card as shown below: 
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/4 raspbian_LI.jpg"> 
+  <img width="auto" height="auto" src="/assets/img/5 storage.jpg"> 
 </p>
 
 ### Step 6
-Write the image and verify the SD card by clicking yes.
+Next click on `WRITE` button and click on `YES` on the pop up as shown below:
+
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/5 raspbian.PNG"> 
+  <img width="auto" height="auto" src="/assets/img/6 writing pop up.jpg"> 
 </p>
 
 You should see the writing progress as shown below
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/6 raspbian.PNG"> 
+  <img width="auto" height="auto" src="/assets/img/7 write progress.jpg"> 
 </p>
 
 When the writing is completed, the following should appear:
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/7 raspbian.PNG"> 
+  <img width="auto" height="auto" src="/assets/img/8 write complete.jpg"> 
 </p>
 
-The SD card is now ready and can be plugged into the SD card slot of the Raspberry Pi. 
+The SD card is now ready and can be plugged into the SD card slot of the Jetson Nano. 
 </details>
 
 ## Accessing Raspberry Pi command line using SSH
