@@ -130,20 +130,20 @@ When the writing is completed, the following should appear:
   <img width="auto" height="auto" src="/assets/img/8 write complete.jpg"> 
 </p>
 
-Unplug the SD Card and be plug it into the SD card slot of the Jetson Nano. 
+Unplug the SD Card. 
 </details>
 
-## Accessing Raspberry Pi command line using SSH
+## Accessing Jetson Nano command line using SSH
   
 <details>
   <summary>Click to expand!</summary>
   
-After installing the Raspbian OS on the Raspberry Pi we need to access its the command line. We can do it using a USB keyboard, a monitor, a HDMI cable and a mouse. Just plug the mouse and the keyboard into the Raspberry Pi's USB ports and the HDMI to the HDMI ports on the monitor and the Pi. Power the monitor and the Pi. From here you can access the Raspberry Pi's full desktop environment.
+Insert the SD Card into the Jetson Nano SD card slot and a USB wifi adapter. If you have a keyboard, mouse, monitor and monitor, follow the instructions [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup) to access the Jetson Nano full desktop on a monitor. 
   
-If you do not have access to a USB keyboard, a monitor, a HDMI cable and a mouse, we will use SSH to access the commandline of a headless Raspberry Pi with another computer. The steps below are a guide on how to access the command line of a Raspberry Pi using SSH 
+In this section, we will access the commandline of the Jetson Nano using SSH and an extra computer. The guide is for computers operating on Windows OS. 
 
 ### Step 1
-Connect the Ethernet cable to the Ethernet ports on your computer and the Raspberry Pi and power the Raspberry Pi. Ensure that the green LED at the Raspberry Pi's Ethernet port is blinking to show a connection has been established between your computer and the Pi. 
+Connect your computer to the Jetson Nano's micro USB port. Connect the power to the Nano's power micro-USB power port and switch it on.  
   
 ### Step 2
 Download and install PuTTy [here](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi) for Windows and [here](https://the.earth.li/~sgtatham/putty/latest/putty-0.76.tar.gz) for Unix
