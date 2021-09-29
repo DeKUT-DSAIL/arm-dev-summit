@@ -197,7 +197,7 @@ Run the following commands to update the OS. Enter the password whenever prompte
 sudo apt-get update
 sudo apt-get upgrade -y --fix-missing
 ```
-When prompted to restart `Docker` select <Yes> and hit enter.
+When prompted to restart `Docker` select Yes and hit enter.
   
 ```cpp
   sudo reboot
