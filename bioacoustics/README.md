@@ -192,6 +192,7 @@ Press enter for the warning security and enter the username you used for your ac
 <details>
   <summary>Click to expand!</summary>
 Run the following commands to update the OS. Enter the password whenever prompted.
+  
 ```cpp
 sudo apt-get update
 sudo apt-get upgrade -y --fix-missing
