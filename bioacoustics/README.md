@@ -187,64 +187,31 @@ Press enter for the warning security and enter the username you used for your ac
   
 </details>
 
-## Updating Jetson Nano OS
+ 
 
-<details>
-  <summary>Click to expand!</summary>
-Run the following commands to update the OS. Enter the password whenever prompted.
-  
-```cpp
-sudo apt-get update
-sudo apt-get upgrade -y --fix-missing
-```
-When prompted to restart `Docker` select Yes and hit enter.
-  
-```cpp
-  sudo reboot
-```
-Once the Jetson Nano has rebooted you will need to re-establish SSH.
-  
-Let's also install the `Nano editor` by running the following command:
-  
-```cpp
-sudo apt-get install nano
-```
-  
-</details>  
-
-## Cloning the repository
+## Setting up a virtual environment
 
 <details>
   <summary>Click to expand!</summary>
   
-We will clone the repository containing the software requirements for this demo. Github changed from use of password to `Personal Access TokenS (PATs)` for authentication. Follow this [link](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to learn how to generate a PAT. Use the PAT as your password when prompted. Run the following command on the command line:
+Let's clone the repository first. Github changed from use of password to `Personal Access TokenS (PATs)` for authentication. Follow this [link](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to learn how to generate a PAT. Use the PAT as your password when prompted. Run the following command on the command line:
   
 ```cpp
 git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
 ```
   
-</details>
-
-## Creating virtual environment
-
-<details>
-  <summary>Click to expand!</summary>
-
-
-To create a virtual environment run the following commands on the command line one by one
-
-```cpp
-cp arm-dev-summit/bioacoustics/env-setup-bash ./
-chmod +x env-setup-bash
-./env-setup-bash
+ To create a virtual environment run the following commands on the Jetson Nano command line one after the other:
+  
+ ```cpp
+cd arm-dev-summit/bioacoustics/
+chmod +x nano2g-setup-bash
+./nano2g-setup-bash
 ```
-Enter yes whenever prompted. Ignore the *Failed to build llvmlite* warning.
-
-
-Now the Raspberry Pi is ready for use in this task.
-
-</details>
- 
+  
+ Enter yes whenever prompted.
+ Now the Jetson Nano is ready for use in this task.
+  
+</details> 
 
 ## Preparing models test setup
 
