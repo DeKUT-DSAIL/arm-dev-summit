@@ -3,7 +3,6 @@ import random
 import librosa
 import numpy as np
 import configparser
-import matplotlib.pyplot as plt
 import audio_noise_separation as an
 
 
@@ -58,7 +57,7 @@ def features_extraction(audio,
       
     signal, _ = an.get_audio_noise(audio, nfft, hop_len)
 
-    signal = pad_audio(signal, duration, sampling_rate, noise_dir)
+    signal = pad_audio(audio, duration, sampling_rate, noise_dir)
 
     feature = librosa.feature.melspectrogram(signal,
                                                     sr=sampling_rate,
@@ -69,3 +68,31 @@ def features_extraction(audio,
                                                     n_mels=num_mels)
     
     return feature
+
+
+def all_summary_features(feature, num_frame):
+    """Splits melspectrograms into chunks and and compute
+    the mean and standard deviation of frequency channels of the chunks
+
+    Args: feature- melspectrogram
+          num_fram- number of frames 
+    """
+
+#     fmean, fstd = compute_feature_mean_std(feature)
+
+    feature = np.log(feature + 1e-8)
+
+    features = []
+
+    if feature.shape[1] > 2 * num_frame + 1:
+
+        for indx in range(num_frame, feature.shape[1] - num_frame - 1, num_frame):
+
+            current_feature = feature[:, indx - num_frame: indx + num_frame + 1]
+
+
+            features.append(np.concatenate((np.mean(current_feature, axis=1),
+                                            np.std(current_feature, axis=1))))
+
+
+    return np.array(features)
