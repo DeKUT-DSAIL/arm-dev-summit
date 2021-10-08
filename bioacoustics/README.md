@@ -204,11 +204,9 @@ git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
   
  ```cpp
 cd arm-dev-summit/bioacoustics/
-chmod +x nano2g-setup-bash
 ./nano2g-setup-bash
 ```
   
- Enter yes whenever prompted.
  Now the Jetson Nano is ready for use in this task.
   
 </details> 
@@ -217,25 +215,25 @@ chmod +x nano2g-setup-bash
 
 <details>
   <summary>Click to expand!</summary>
-  We will demonstrate acoustic classification of birds using a Raspberry Pi, some LEDs, and a USB microphone. To prepare the setup, we need to shutdown the Raspberry Pi first and disconnect it from power. Run the following command on the command line:
+We will demonstrate acoustic classification of birds using a Jetson Nano, some LEDs, and a USB microphone. To prepare the setup, we need to shutdown the Jetson Nano first and disconnect it from power. Run the following command on the command line and enter the password when prompted:
   
 ```cpp
 sudo shutdown now
 ```
-Wait until the activity (green) LED stops blinking before disconnecting the Raspberry Pi from power. After disconnecting the Raspberry Pi from power, we will proceed to prepare the models test setup. The diagram below shows the Raspberry Pi pinout:
+Wait about a minute before disconnecting the Jetson Nano from power. After disconnecting the Jetson Nano from power, we will proceed to prepare the models test setup. The diagram below shows the Jetson Nano pinout:
   
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/25 raspi-pinout.png">  
+  <img width="auto" height="auto" src="/assets/img/22 jetson pinout.jpg">  
 </p>
 
 <p align="center"> 
-  <em>Pinout of the Raspberry Pi</em>
+  <em>Pinout of the Jetson Nano</em>
 </p>
   
-We will be using `GPIO 18`, `GPIO 23`, `GPIO 24` and `Ground (pin 6)`. Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal (the longer pin) of the LED is connected to the Raspberry Pi's GPIO pin through a resistor and the shorter pin to the ground rail. The lines on the figure that follow indicate continuity of holes in the breadboard:
+We will be using GPIO pins `19`, `21`, `23` and Ground pin `25`. Make the connections as shown below. Note the polarity of the LED shown in the diagram. The positive terminal (the longer pin) of the LED is connected to the Jetson Nano's GPIO pin and the shorter pin to the ground rail through a resistor. The lines on the figure that follows indicate continuity of holes in the breadboard:
  
  <p align="center">
-  <img width="auto" height="auto" src="/assets/img/31 breadboard-continuituy.png">  
+  <img width="auto" height="auto" src="/assets/img/26 breadboard-continuituy.png">  
 </p>
   
  <p align="center"> 
@@ -243,13 +241,13 @@ We will be using `GPIO 18`, `GPIO 23`, `GPIO 24` and `Ground (pin 6)`. Make the 
 </p>
 
 <p align="center">
-  <img width="auto" height="auto" src="/assets/img/26 model-test-setup.jpg">  
+  <img width="auto" height="auto" src="/assets/img/23 jetson-model-setup.jpg">  
 </p>
 
 <p align="center"> 
   <em>Model test setup</em>
 </p>
   
-Plug in the microphone into one of the Raspberry Pi's USB port and power the Raspberry Pi. Follow the steps outlined above to access the Raspberry Pi's Desktop on VNC viewer. The setup is ready for models testing
+Plug in the microphone into one of the Jetson Nano's USB port and power the Jetson Nano. Follow the steps outlined above to access the Jetson Nano's commandline. The setup is ready for models testing
   
 </details>
