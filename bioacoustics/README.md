@@ -248,6 +248,16 @@ We will be using GPIO pins `19`, `21`, `23` and Ground pin `25`. Make the connec
   <em>Model test setup</em>
 </p>
   
+  
+  <p align="center">
+  <img width="auto" height="300" src="/assets/img/24 jetson-model-setup.jpg">
+  <img width="auto" height="300" src="/assets/img/25 hand-drawn-jetson-schematic.jpg"> 
+</p>
+
+<p align="center"> 
+  <em> A setup to test trained classification models on the Jetson Nano (left) and a schematic of LEDs connection to the Jetson Nano (right)</em>
+</p>
+  
 Plug in the microphone into one of the Jetson Nano's USB port and power the Jetson Nano. Follow the steps outlined above to access the Jetson Nano's commandline. The setup is ready for models testing
   
 </details>
