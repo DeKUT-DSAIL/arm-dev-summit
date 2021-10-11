@@ -31,17 +31,17 @@ Link :link:[Anomaly_Detection_Notebook_Link](https://colab.research.google.com/d
 
 - Click on the files icon on the side bar shown below.
 
-![cover page image](/water_level_data_analysis_anomaly-detection/assets/img/file1.PNG)
+![cover page image](/Anomaly detection_water level data/assets/img/file1.PNG)
 
 - Click on the upload button aned you will be prompted to upload a file.
 - Select the three datasets from the repo you cloned (in the data folder) and upload it.
 
-![cover page image](/water_level_data_analysis_anomaly-detection/assets/img/file2.PNG)
+![cover page image](/Anomaly detection_water level data/assets/img/file2.PNG)
 
 - Right click on the dataset samples to copy the path.
 - Paste it on the *dataset import slots* cell of the notebook
 
-![cover page image](/water_level_data_analysis_anomaly-detection/assets/img/file3.PNG)
+![cover page image](/Anomaly detection_water level data/assets/img/file3.PNG)
 
 - Run the notebook :battery: **green light**
 
