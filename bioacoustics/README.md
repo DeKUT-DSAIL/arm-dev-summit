@@ -41,6 +41,11 @@ After training a model, we can then deploy it on an acoustic sensor (a Raspberry
 During this session, we will go through the steps of preparing a setup to demonstrate acoustic classification of birds.
 
 
+# Pre-Workshop Instructions
+
+<details>
+  <summary>Click to expand!</summary>
+
 ## Requirements
 
 <details>
@@ -209,7 +214,9 @@ cd arm-dev-summit/bioacoustics/
   
  Now the Jetson Nano is ready for use in this task.
   
-</details> 
+</details>
+  
+</details>
 
 ## Preparing models test setup
 
