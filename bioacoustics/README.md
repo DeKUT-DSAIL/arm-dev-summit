@@ -168,6 +168,9 @@ cd arm-dev-summit/bioacoustics/
 
 # Workshop Instructions
 
+<details>
+  <summary>Click to expand!</summary>
+
 We will use the following guidelines for the workshop
 
 ### Preparing models test setup
@@ -234,5 +237,7 @@ source dsp-env/bin/activate
 cd baseline_models/
 python nano_model_test.py -m "svm" -md "models" -n "noise" -a "labels.csv"
 ```
+  
+</details>
   
 </details>
