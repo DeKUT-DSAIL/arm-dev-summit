@@ -237,7 +237,7 @@ source dsp-env/bin/activate
 cd baseline_models/
 python nano_model_test.py -m "svm" -md "models" -n "noise" -a "labels.csv"
 ```
-  
+In place of "svm" for `Linear Support Vector Classifier`, you can also use "rf" for `Random Forest Classifier`, "mlp" for `Multilayer Perceptron` or "svm-rbf" for `Support Vector Classifier`.
 </details>
   
 </details>
