@@ -9,7 +9,7 @@
 #### :one: Software Environment
  To be able to run the notebooks in this session, do the following
 1. Download and install python from [python.org](python.org). Remember to link it to your path.
-2. Clone this repository and cd into it - (** anomaly-detction folder**)
+2. Clone this repository and cd into it - (**anomaly-detction folder**)
 3. Create a [virtual environment](https://docs.python.org/3/tutorial/venv.html)
 On Linux `python3 -m venv iot-env` or On Windows `python -m venv iot-env`
 4. Activate it
