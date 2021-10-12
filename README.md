@@ -1,5 +1,5 @@
 
-# ARM DEV SUMMIT 2021 - Environmental Data Aquisition and Processing session (Session ID 506437) 
+# [ARM DEV SUMMIT 2021 - Environmental Data Acquisition and Processing](https://devsummit.arm.com/en/sessions/75) (Session ID 506437)
 ## Hosted by
 
 ### Jason Kabi
@@ -7,7 +7,7 @@
 ![cover page image](/assets/img/jason.jpg)
 
 #### Brief Bio
-I am currently a Research intern at [Centre for Data Science and Artificial Intelligence (DSAIL)](https://dekut-dsail.github.io/), [Dedan Kimathi University of Technology](https://www.dkut.ac.ke/). I am also a Graduate Electrical Engineer and Data Scientist with experience in Machine Learning, IoT/Sensor systems development, IoT/Sensor systems deployment, data analysis, data visualization, and Electrical hardware (PCB) Design. In this session i'm  taking the audience through a river Water level Monitoring project. Data collected can be used to diagnose the status of the river catchment. 
+I am currently a Research intern at [Centre for Data Science and Artificial Intelligence (DSAIL)](https://dekut-dsail.github.io/), [Dedan Kimathi University of Technology](https://www.dkut.ac.ke/). I am also a Graduate Electrical Engineer and Data Scientist with experience in Machine Learning, IoT/Sensor systems development, IoT/Sensor systems deployment, data analysis, data visualization, and Electrical hardware (PCB) Design. In this session i'm  taking the audience through a river Water level Monitoring project. Data collected can be used to diagnose the status of the river catchment.
 - :link: [Linkedin](https://www.linkedin.com/in/kabi-jason-b14b68164)
 - :link: Email: jason.kabi@dkut.ac.ke
 
@@ -37,7 +37,6 @@ For this system we will show how acoustic data can be continuously captured and 
 #### Anomaly Detection
 This system will be built upon work we have done in water system monitoring. Here we will measure distance using an ultrasonic sensor and show how anomalies in the measurements can be automatically flagged using appropriate machine learning. Participants will have access to a real world data stream from a river in Kenya collected via LoRa and will be able to use cheap ultrasonic sensors to replicate the system locally. We will demonstrate the deployment of these models on a web application developed using dash. The models will leverage scikit-learn.
 
-## Sponsors 
+## Sponsors
 Centre for Data Science and Artificial Intelligence (DSAIL - DeKUT)
 ![cover page image](/assets/img/logo.png)
-
