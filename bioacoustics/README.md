@@ -80,13 +80,13 @@ The Jetson Nano needs an operating system for its operation. The following steps
       
   Download the [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image) and note where it is saved.
       
-  ### Step 2
+  #### Step 2
 Follow the instructions outlined [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#write) to write the image in the SD Card for Windows, MacOS and Linux.
   
 
 </details>
 
-## Accessing Jetson Nano command line using SSH
+### Accessing Jetson Nano command line using SSH
   
 <details>
   <summary>Click to expand!</summary>
@@ -95,13 +95,13 @@ Insert the SD Card into the Jetson Nano SD card slot and a USB wifi adapter. If 
   
 In this section, we will access the commandline of the Jetson Nano using SSH and an extra computer. The guide is for computers operating on Windows OS. 
 
-### Step 1
+#### Step 1
 Connect your computer to the Jetson Nano's micro USB port. Connect the power to the Nano's power micro-USB power port and switch it on.  
   
-### Step 2
+#### Step 2
 Download and install PuTTy [here](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi).
 
-### Step 3
+#### Step 3
 With the cursor at the windows icon, right click and open the `Device Manager` option. Under `Ports(COM & LPT)`, right click on the options and select properties. In the window that pops up, go to the 'Details` option and under `Property` select `Hardware id`. If the value is of the form shown in the diagram below, that's is the COM port of our interest. For my case it is COM4. Take note of the COM port for your case.
 
 <p align="center">
@@ -109,7 +109,7 @@ With the cursor at the windows icon, right click and open the `Device Manager` o
 </p>
 
   
-### Step 4
+#### Step 4
 Launch PuTTy and under `Connection type`, select serial. Enter the COM port noted above and change the speed to 115200 as shown below and click on `Open'.
   
 <p align="center">
@@ -142,7 +142,7 @@ Press enter for the warning security and enter the username you used for your ac
 
  
 
-## Setting up a virtual environment
+### Setting up a virtual environment
 
 <details>
   <summary>Click to expand!</summary>
