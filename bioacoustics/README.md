@@ -168,10 +168,10 @@ cd arm-dev-summit/bioacoustics/
 
 # Workshop Instructions
 
+We will use the following guidelines for the workshop
+
 <details>
   <summary>Click to expand!</summary>
-
-We will use the following guidelines for the workshop
 
 ### Preparing models test setup
 
