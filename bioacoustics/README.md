@@ -43,10 +43,12 @@ During this session, we will go through the steps of preparing a setup to demons
 
 # Pre-Workshop Instructions
 
+Execute the following instructions before the Workshop day.
+
 <details>
   <summary>Click to expand!</summary>
 
-## Requirements
+### Requirements
 
 <details>
   <summary>Click to expand!</summary>
@@ -67,75 +69,21 @@ During this session, we will go through the steps of preparing a setup to demons
 </details>
 
 
-## Writing image in the SD Card
+### Writing image in the SD Card
 
 <details>
   <summary>Click to expand!</summary>
 
 The Jetson Nano needs an operating system for its operation. The following steps outline the process of writing an image in an SD Card to be used with the Jetson Nano. 
 
-  ### Step 1
+  #### Step 1
       
-  Download the [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-sd-card-image) and note where it is saved.
+  Download the [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image) and note where it is saved.
       
   ### Step 2
-Download, install and launch the Raspberry Pi imager for [Windows](https://downloads.raspberrypi.org/imager/imager_latest.exe), [macOS](https://downloads.raspberrypi.org/imager/imager_latest.dmg) and [Ubuntu x86](https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb). You will get the following window:
+Follow the instructions outlined [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#write) to write the image in the SD Card for Windows, MacOS and Linux.
   
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/1 raspberry pi imager.jpg"> 
-</p>
 
-### Step 3
-Connect the SD Card to your computer using an SD Card reader or using the SD Card slot if the computer has one
-
-### Step 4
-Click on `CHOOSE OS`  and select the option `Use Custom` as shown below:
- 
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/2. use custom.jpg"> 
-</p>
-  
-On the window that will popup, access the location where the Jetson Nano Developer Kit SD Card Image was saved. Select the image and click on open as shown below:
-  
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/3 image-select.jpg"> 
-</p>
-
-Once in the home page of the Raspberry Pi imager, press CTRL + SHIFT + X for advanced options and uncheck all options if any is checked as shown below and save:
-  
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/4 advanced options.jpg"> 
-</p>
-
-
-### Step 5
-Next click on `CHOOSE STORAGE` button and select the SD card as shown below: 
-
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/5 storage.jpg"> 
-</p>
-
-### Step 6
-Next click on `WRITE` button and click on `YES` on the pop up as shown below:
-
-
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/6 writing pop up.jpg"> 
-</p>
-
-You should see the writing progress as shown below
-
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/7 write progress.jpg"> 
-</p>
-
-When the writing is completed, the following should appear:
-
-<p align="center">
-  <img width="auto" height="auto" src="/assets/img/8 write complete.jpg"> 
-</p>
-
-Unplug the SD Card. 
 </details>
 
 ## Accessing Jetson Nano command line using SSH
@@ -176,9 +124,9 @@ You should see the following window:
   
 Press enter. Under `License For Cuustomer Use of NVIDIA Software`, press the tab key followed by enter. Under `Select a language` select English, press the tab key followed by enter key. Under `Select your location`, scroll to you country using the up-down navigation keys and press the tab key followed by enter key. If your country is not in the first list, select the `other` option at the bottom of the list, press the tab key and then enter key. Navigate to your continent and select it. Choose your country. and hit ok.
   
-Under `Configure locales` choose your option but preferably choose the `United States -en_US.UTF-8` option and hit ok. Hit Yes under `Where are you?`. Under `Who are you?`, enter your full name in lower case and hit ok. In the next window press ok to set user name for your account as your first name. Next choose a password for your account and press ok. Re-enter the password to confirm and hit ok. Under `APP Partition Size`, use the default by hitting ok. Under `Create SWAP File`, press ok followed by Yes. Under `Network configuration` choose `wlan0: Wireless ethernet (801.11x)` and hit ok. Select `Enter the ESSID manually` even if you can see the wireless network you intend to connect to and hit ok. If the network is open, i.e. not password protected, select the `WEP/Open Network` otherwise the `WPA/WPA2 PSK` and hit ok. Enter the password of the wireless network and hit ok. Give it sometime to establish a conneection. Under `Hostname`, clear localhost, enter `jetson.local` and hit ok. Under `Select Nvpmodel Mode`, select `MAXN` and hit ok. After installing system, the Jetson nano will reboot. Close the PuTTy terminal and launch it again.
+Under `Configure locales` choose your option but preferably choose the `United States -en_US.UTF-8` option and hit ok. Hit Yes under `Where are you?`. Under `Who are you?`, enter your full name in lower case and hit ok. In the next window press ok to set user name for your account as your first name. Next choose a password for your account and press ok. Re-enter the password to confirm and hit ok. Under `APP Partition Size`, use the default by hitting ok. Under `Create SWAP File`, press ok followed by Yes. Under `Network configuration`, choose `dummy0: Uknown interface`. The system will try to configure the network with DCHP and fail. Select ok and hit enter. In the window that follows, select `Do not configure the network at this time` and hit ok. Under `Hostname`, clear localhost, enter `jetson` and hit ok. Under `Select Nvpmodel Mode`, select `MAXN` and hit ok. After installing system, the Jetson nano will reboot. Close the PuTTy terminal and launch it again.
   
-We will use SSH to access the Jetson Nano. Under Host Name(or IP Address), enter `jetson.local` as shown below and press `Open`.
+We will use SSH to access the Jetson Nano. Under Host Name(or IP Address), enter `jetson` as shown below and press `Open`.
   
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/12 hostname-ssh.jpg"> 
@@ -218,11 +166,15 @@ cd arm-dev-summit/bioacoustics/
   
 </details>
 
-## Preparing models test setup
+# Workshop Instructions
+
+We will use the following guidelines for the workshop
+
+### Preparing models test setup
 
 <details>
   <summary>Click to expand!</summary>
-We will demonstrate acoustic classification of birds using a Jetson Nano, some LEDs, and a USB microphone. To prepare the setup, we need to shutdown the Jetson Nano first and disconnect it from power. Run the following command on the command line and enter the password when prompted:
+We will demonstrate acoustic classification of birds using a Jetson Nano, some LEDs, and a USB microphone. Ensure tha the Jetson Nano is not powered before preparing the setup. To shutdown the Jetson Nano, Run the following command on the command line and enter the password when prompted:
   
 ```cpp
 sudo shutdown now
@@ -266,5 +218,21 @@ We will be using GPIO pins `19`, `21`, `23` and Ground pin `25`. Make the connec
 </p>
   
 Plug in the microphone into one of the Jetson Nano's USB port and power the Jetson Nano. Follow the steps outlined above to access the Jetson Nano's commandline. The setup is ready for models testing
+  
+</details>
+
+
+### Testing the models
+
+<details>
+  <summary>Click to expand!</summary>
+ Run the following commands on the commandline to test the models:
+
+```cpp
+cd arm-dev-summit/bioacoustics/
+source dsp-env/bin/activate 
+cd baseline_models/
+python nano_model_test.py -m "svm" -md "models" -n "noise" -a "labels.csv"
+```
   
 </details>
