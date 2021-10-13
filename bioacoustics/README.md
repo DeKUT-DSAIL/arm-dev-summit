@@ -157,7 +157,9 @@ For example if my Wi-Fi's name is `DSAIL` and its password is `dsail@19`, the co
   
 ```cpp
 sudo nmcli dev wifi con DSAIL password dsail@19
-```  
+```
+  
+Enter the password when prompted.
 
 Replace 'SSID' with the Wi-Fi name and 'pass' with the Wi-Fi's password.
   
@@ -173,8 +175,10 @@ git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
 cd arm-dev-summit/bioacoustics/
 ./nano2g-setup-bash
 ```
+ 
+Enter the password when prompted.
   
- Now the Jetson Nano is ready for use in this task.
+Now the Jetson Nano is ready for use in this task.
   
 </details>
   
@@ -205,6 +209,10 @@ We will demonstrate acoustic classification of birds using a Jetson Nano, some L
 ```cpp
 sudo shutdown now
 ```
+
+ 
+Enter the password when prompted.
+
 Wait about a minute before disconnecting the Jetson Nano from power. After disconnecting the Jetson Nano from power, we will proceed to prepare the models test setup. The diagram below shows the Jetson Nano pinout:
   
 <p align="center">
