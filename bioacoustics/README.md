@@ -153,7 +153,7 @@ You are required to have Wi-Fi with good internet connectivity. To connect to th
 sudo nmcli dev wifi con 'SSID' password 'pass'
 ```
 
-For example if my Wi-Fi's name is `DSAIL` and it's password is `dsail@19`, the command will take the form:
+For example if my Wi-Fi's name is `DSAIL` and its password is `dsail@19`, the command will take the form:
   
 ```cpp
 sudo nmcli dev wifi con DSAIL password dsail@19
