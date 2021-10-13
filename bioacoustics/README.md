@@ -147,12 +147,12 @@ Press enter for the warning security and enter the username you used for your ac
 <details>
   <summary>Click to expand!</summary>
   
-Let's connect the Jetson Nano to the Wi-Fi. You are required to have Wi-Fi with good internet connectivity. To connect to the Wi-Fi, run the following command:
+You are required to have Wi-Fi with good internet connectivity. To connect to the Wi-Fi, run the following command:
 
 ```cpp
-sudo nmcli dev wifi con <SSID> password <pass>
+sudo nmcli dev wifi con 'SSID' password 'pass'
 ```
-Replace <SSID> with the Wi-Fi name and <pass> with the Wi-Fi's password.
+Replace 'SSID' with the Wi-Fi name and 'pass' with the Wi-Fi's password.
   
 Let's proceed to clone the repository with the requirements first. Github changed from use of password to `Personal Access TokenS (PATs)` for authentication. Follow this [link](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to learn how to generate a PAT. Use the PAT as your password when prompted. Run the following command on the command line:
   
