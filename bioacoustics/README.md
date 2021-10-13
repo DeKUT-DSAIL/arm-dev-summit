@@ -102,7 +102,7 @@ Connect your computer to the Jetson Nano's micro USB port. Connect the power to 
 Download and install PuTTy [here](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi).
 
 #### Step 3
-With the cursor at the windows icon, right click and open the `Device Manager` option. Under `Ports(COM & LPT)`, right click on the options and select properties. In the window that pops up, go to the 'Details` option and under `Property` select `Hardware id`. If the value is of the form shown in the diagram below, that's is the COM port of our interest. For my case it is COM4. Take note of the COM port for your case.
+With the cursor at the windows icon, right click and open the `Device Manager` option. Under `Ports(COM & LPT)`, right click on the options and select properties. In the window that pops up, go to the `Details` option and under `Property` select `Hardware id`. If the value is of the form shown in the diagram below, that's is the COM port of our interest. For my case it is COM4. Take note of the COM port for your case.
 
 <p align="center">
   <img width="auto" height="auto" src="/assets/img/9 device-manager.jpg"> 
@@ -122,9 +122,9 @@ You should see the following window:
   <img width="auto" height="auto" src="/assets/img/11 first-window.jpg"> 
 </p>
   
-Press enter. Under `License For Cuustomer Use of NVIDIA Software`, press the tab key followed by enter. Under `Select a language` select English, press the tab key followed by enter key. Under `Select your location`, scroll to you country using the up-down navigation keys and press the tab key followed by enter key. If your country is not in the first list, select the `other` option at the bottom of the list, press the tab key and then enter key. Navigate to your continent and select it. Choose your country. and hit ok.
+Press enter. Under `License For Customer Use of NVIDIA Software`, press the tab key followed by enter. Under `Select a language` select English, press the tab key followed by enter key. Under `Select your location`, scroll to you country using the up-down navigation keys and press the tab key followed by enter key. If your country is not in the first list, select the `other` option at the bottom of the list, press the tab key and then enter key. Navigate to your continent and select it. Choose your country. and hit ok.
   
-Under `Configure locales` choose your option but preferably choose the `United States -en_US.UTF-8` option and hit ok. Hit Yes under `Where are you?`. Under `Who are you?`, enter your full name in lower case and hit ok. In the next window press ok to set user name for your account as your first name. Next choose a password for your account and press ok. Re-enter the password to confirm and hit ok. Under `APP Partition Size`, use the default by hitting ok. Under `Create SWAP File`, press ok followed by Yes. Under `Network configuration`, choose `dummy0: Uknown interface`. The system will try to configure the network with DCHP and fail. Select ok and hit enter. In the window that follows, select `Do not configure the network at this time` and hit ok. Under `Hostname`, clear localhost, enter `jetson` and hit ok. Under `Select Nvpmodel Mode`, select `MAXN` and hit ok. After installing system, the Jetson nano will reboot. Close the PuTTy terminal and launch it again.
+Under `Configure locales` choose your option but preferably choose the `United States -en_US.UTF-8` option and hit ok. Hit Yes under `Where are you?`. Under `Who are you?`, enter your full name in lower case and hit ok. In the next window press ok to set user name for your account as your first name. Next choose a password for your account and press ok. Re-enter the password to confirm and hit ok. Under `APP Partition Size`, use the default by hitting ok. Under `Create SWAP File`, press ok followed by Yes. Under `Network configuration`, choose `dummy0: Uknown interface`. The system will try to configure the network with DCHP and fail. Select ok and hit enter. In the window that follows, select `Do not configure the network at this time` and hit ok. Under `Hostname`, clear ubuntu, enter `jetson` and hit ok. Under `Select Nvpmodel Mode`, select `MAXN` and hit ok. After installing system, the Jetson nano will reboot. Close the PuTTy terminal and launch it again.
   
 We will use SSH to access the Jetson Nano. Under Host Name(or IP Address), enter `jetson` as shown below and press `Open`.
   
@@ -147,7 +147,14 @@ Press enter for the warning security and enter the username you used for your ac
 <details>
   <summary>Click to expand!</summary>
   
-Let's clone the repository first. Github changed from use of password to `Personal Access TokenS (PATs)` for authentication. Follow this [link](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to learn how to generate a PAT. Use the PAT as your password when prompted. Run the following command on the command line:
+Let's connect the Jetson Nano to the Wi-Fi. You are required to have Wi-Fi with good internet connectivity. To connect to the Wi-Fi, run the following command:
+
+```cpp
+sudo nmcli dev wifi con <SSID> password <pass>
+```
+Replace <SSID> with the Wi-Fi name and <pass> with the Wi-Fi's password.
+  
+Let's proceed to clone the repository with the requirements first. Github changed from use of password to `Personal Access TokenS (PATs)` for authentication. Follow this [link](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to learn how to generate a PAT. Use the PAT as your password when prompted. Run the following command on the command line:
   
 ```cpp
 git clone https://github.com/DeKUT-DSAIL/arm-dev-summit.git
@@ -161,6 +168,15 @@ cd arm-dev-summit/bioacoustics/
 ```
   
  Now the Jetson Nano is ready for use in this task.
+  
+</details>
+  
+### Download test data
+
+<details>
+  <summary>Click to expand!</summary>
+  
+Download test data [here](https://drive.google.com/file/d/1rhU-XReClZ0mLo33eM6atluQJ503TJ9K/view?usp=sharing) and extract it. Transfer it to your phone to make it easier to play it close to the microphone for testing.
   
 </details>
   
