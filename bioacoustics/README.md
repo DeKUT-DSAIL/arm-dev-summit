@@ -266,9 +266,9 @@ Plug in the microphone into one of the Jetson Nano's USB port and power the Jets
 cd arm-dev-summit/bioacoustics/
 source dsp-env/bin/activate 
 cd baseline_models/
-python nano_model_test.py -m "svm" -md "models" -n "noise" -a "labels.csv"
+python nano_model_test.py -m "mlp" -md "models" -n "noise" -a "labels.csv" -c "False"
 ```
-In place of "svm" for `Linear Support Vector Classifier`, you can also use "rf" for `Random Forest Classifier`, "mlp" for `Multilayer Perceptron` or "svm-rbf" for `Support Vector Classifier`.
+In place of "mlp" for `Multilayer Perceptron`, you can also use "svm" for `Linear Support Vector Classifier`, "rf" for `Random Forest Classifier`,  or "svm-rbf" for `Support Vector Classifier`.
 </details>
   
 </details>
