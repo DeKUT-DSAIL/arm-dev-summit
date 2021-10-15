@@ -11,6 +11,7 @@ import sounddevice as sd
 from collections import Counter
 import features_generation as fg
 import Jetson.GPIO as GPIO
+from ast import literal_eval as make_boolean
 
 
 parser = argparse.ArgumentParser(description='Test trained models')
@@ -26,7 +27,7 @@ parser.add_argument('-md',
                         required=True,
                         metavar='',
                         help='Directory containing saved models')
-parser.add_argument('-c',
+parser.add_argument('-ch',
                         '--channels',
                         type=int,
                         default=1,
@@ -56,6 +57,13 @@ parser.add_argument('-a',
                         required=True,
                         metavar='',
                         help="path to the annotation csv file.")
+
+parser.add_argument('-c',
+                        '--chunk',
+                        type=str,
+                        default='True',
+                        metavar='',
+                        help='True for feature to be split into chunks')
 
 args = parser.parse_args()
 
@@ -232,7 +240,7 @@ def main():
                             print('Unclear')
 
             else:
-                print('Unclear')        
+                print('Unclear')
 
         except Exception as e:
             print(e)
@@ -258,11 +266,9 @@ def main():
                             my_block = q.get()
                             my_block = my_block.flatten()
                             audio = np.concatenate((audio, my_block))
-                        print(audio.shape)
 
                         audio = librosa.resample(audio, stream_samplerate, sampling_rate)
 
-                        print(audio.shape)
 
                         feature = fg.features_extraction(audio,
                                                      nfft,
@@ -275,70 +281,75 @@ def main():
                                                      num_mels)
 
 
-                        # feature = np.log(feature + 1e-8)
+                        chunk = make_boolean(args.chunk)
 
-                        # features = np.concatenate((np.mean(feature, axis=1),
-                        #                                     np.std(feature, axis=1))).reshape(1, -1)
-
+                        if chunk:
 
 
-                        X = fg.all_summary_features(feature, num_frame)
-                        #print(X.shape)
-                        if X.size:
-                            #print('predicting')
-                            predicted = clf.predict(X)
-                            predictions = [species[int(i)] for i in predicted]
-                            if len(predictions) == 1:
+                            X = fg.all_summary_features(feature, num_frame)
+                            if X.size:
+                                #print('predicting')
+                                predicted = clf.predict(X)
+                                predictions = [species[int(i)] for i in predicted]
+                                if len(predictions) == 1:
 
-                                predicted_species = predictions[0]
-                                print('predicted species is: ', predicted_species)
-
-                            elif len(predictions) == 2:
-                                if predictions[0] == predictions[1]:
                                     predicted_species = predictions[0]
                                     print('predicted species is: ', predicted_species)
 
-                                else:
-                                    print('Unclear')
-
-                            elif len(predictions) >= 3:
-                                num_birds = Counter(predictions)
-                                most_frequent = num_birds.most_common(4)
-
-                                if len(most_frequent) == 1:
-                                    predicted_species = predictions[0]
-                                    print('predicted species is: ', predicted_species)
-
-
-                                else:
-                                    # counts = [count[1] for count in most_frequent]
-                                    if most_frequent[0][1] > most_frequent[1][1]:
-                                        predicted_species = most_frequent[0][0]
+                                elif len(predictions) == 2:
+                                    if predictions[0] == predictions[1]:
+                                        predicted_species = predictions[0]
                                         print('predicted species is: ', predicted_species)
 
                                     else:
                                         print('Unclear')
 
+                                elif len(predictions) >= 3:
+                                    num_birds = Counter(predictions)
+                                    most_frequent = num_birds.most_common(4)
+
+                                    if len(most_frequent) == 1:
+                                        predicted_species = predictions[0]
+                                        print('predicted species is: ', predicted_species)
+
+
+                                    else:
+                                        # counts = [count[1] for count in most_frequent]
+                                        if most_frequent[0][1] > most_frequent[1][1]:
+                                            predicted_species = most_frequent[0][0]
+                                            print('predicted species is: ', predicted_species)
+
+                                        else:
+                                            print('Unclear')
+
+                            else:
+                                print('Inaudible')
+
                         else:
-                            print('Inaudible')
 
 
-                         
-                        # print('predicting')
-                        # predicted = clf.predict(features)
-                        # predicted = species[int(predicted[:])]
-                        # print(predicted)
+                            feature = np.log(feature + 1e-8)
 
-                        if predicted_species == 'grey-backed camaroptera':
-                            pin = 19
+                            features = np.concatenate((np.mean(feature, axis=1),
+                                                             np.std(feature, axis=1))).reshape(1, -1)
 
-                        elif predicted_species == 'hartlaub\'s turaco':
-                            pin = 21
+                            predicted = clf.predict(features)
+                            predicted_species = species[int(predicted[:])]
+                            print('Predicted: ', predicted_species)
 
-                        elif predicted_species == 'tropical boubou':
-                            pin = 23
+                        if predicted_species != 'noise':
 
-                        pin_blink(pin)
+                            if predicted_species == 'grey-backed camaroptera':
+                                pin = 19
+
+                            elif predicted_species == 'hartlaub\'s turaco':
+                                pin = 21
+
+                            elif predicted_species == 'tropical boubou':
+                                pin = 23
+
+
+                            pin_blink(pin)
 
 
         except Exception as e:
